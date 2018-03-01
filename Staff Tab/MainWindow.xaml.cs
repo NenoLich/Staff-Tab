@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Collections.ObjectModel;
 
 namespace Staff_Tab
 {
@@ -20,6 +21,8 @@ namespace Staff_Tab
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static ObservableCollection<Department> departments=new ObservableCollection<Department>();
+
         public MainWindow()
         {
             InitializeComponent();
