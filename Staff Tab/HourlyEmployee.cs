@@ -9,7 +9,7 @@ namespace Staff_Tab
 {
     class HourlyEmployee : Employee
     {
-        public new PayFrequency PayFrequency;
+        public new PayFrequency PayFrequency { get; }
 
         /// <summary>
         /// Describes the typical amount of work for hourly employees. This data does not apply to salary employees. 

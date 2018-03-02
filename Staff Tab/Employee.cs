@@ -5,12 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Staff_Tab
 {
     abstract class Employee: IComparable
     {
-        [JsonConverter(typeof(StringEnumConverter))]
+        [JsonIgnore]
+        protected static DepartmentCollection departments = (DepartmentCollection)Application.Current.FindResource("Departments");
+
         public PayFrequency PayFrequency { get; }
         public string SecondName { get; protected set; }
         public string FirstName { get; protected set; }
@@ -19,23 +22,21 @@ namespace Staff_Tab
         /// Title of employee
         /// </summary>
         public string JobTitles { get; protected set; }
-        public Department Department { get; protected set; }
 
-        [JsonConverter(typeof(StringEnumConverter))]
+        public Department Department { get; set; }
         public JobStatus JobStatus { get; protected set; }
 
         [JsonConstructor]
-        protected Employee(string secondName, string firstName, string jobTitles, string department, JobStatus jobStatus)
+        protected Employee(string secondName, string firstName, string jobTitles, string departmentName, JobStatus jobStatus)
         {
-            PayFrequency = PayFrequency.Salary;
             SecondName = secondName;
             FirstName = firstName;
             JobTitles = jobTitles;
-            if ()
-            {
-                Department = department;
-            }
-            
+
+            Department department = departments.First(x => x.Name == departmentName);
+            Department = department is null ? new Department(departmentName) : department;
+            department.Hire(this);
+
             JobStatus = jobStatus;
         }
 

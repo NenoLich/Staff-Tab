@@ -21,8 +21,6 @@ namespace Staff_Tab
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static ObservableCollection<Department> departments=new ObservableCollection<Department>();
-
         public MainWindow()
         {
             InitializeComponent();

@@ -10,26 +10,27 @@ namespace Staff_Tab
     {
         List<Employee> employees=new List<Employee>();
 
-        public string DepartmentName { get; private set; }
+        public string Name { get; private set; }
 
-        public Department(string departmentName)
+        public Department(string name)
         {
-            DepartmentName = departmentName;
+            Name = name;
         }
 
         public void Hire(Employee employee)
         {
             employees.Add(employee);
+            employee.Department = this;
         }
 
         public override string ToString()
         {
-            return DepartmentName;
+            return Name;
         }
 
         public int CompareTo(object obj)
         {
-            return DepartmentName.CompareTo(obj);
+            return Name.CompareTo(obj);
         }
     }
 }

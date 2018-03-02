@@ -3,6 +3,7 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,7 +15,28 @@ namespace Staff_Tab
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            throw new NotImplementedException();
+            JObject jo = new JObject();
+            Type type = value.GetType();
+
+            foreach (PropertyInfo propertyInfo in type.GetProperties())
+            {
+                if (propertyInfo.CanRead)
+                {
+                    object propertyValue = propertyInfo.GetValue(value, null);
+                    if (propertyValue != null)
+                    {
+                        if (propertyInfo.Name == "Department")
+                        {
+                            jo.Add(propertyInfo.Name, JToken.FromObject(((Department)propertyValue).Name, serializer));
+                        }
+                        else
+                        {
+                            jo.Add(propertyInfo.Name, JToken.FromObject(propertyValue, serializer));
+                        }
+                    }
+                }
+            }
+            jo.WriteTo(writer);
         }
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {

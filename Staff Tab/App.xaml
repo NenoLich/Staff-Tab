@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:Staff_Tab"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <local:DepartmentCollection x:Key="Departments"/>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

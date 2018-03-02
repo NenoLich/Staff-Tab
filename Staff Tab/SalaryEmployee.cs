@@ -9,7 +9,7 @@ namespace Staff_Tab
 {
     class SalaryEmployee : Employee
     {
-        public new PayFrequency PayFrequency;
+        public new PayFrequency PayFrequency { get; }
 
         /// <summary>
         /// Annual salary rates. Only applies for employees whose pay frequency is "Salary"
