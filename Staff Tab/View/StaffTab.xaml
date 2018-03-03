@@ -1,4 +1,4 @@
-﻿<Window x:Class="Staff_Tab.MainWindow"
+﻿<Window x:Class="Staff_Tab.StaffTab"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -7,20 +7,20 @@
         xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
         mc:Ignorable="d"
         Title="Staff Tab" Height="350" Width="525">
-    <!--<Grid >
+    <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Menu Grid.ColumnSpan="2" >
-            <MenuItem Header="Файл">
+        <Menu Grid.ColumnSpan="2" Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Файл" Height="25" Width="51">
                 <MenuItem Header="Открыть" Command="{Binding OpenCommand}" />
                 <MenuItem Header="Сохранить" Command="{Binding SaveCommand}" />
             </MenuItem>
         </Menu>
-        <ListView Grid.Column="0" ItemsSource="{Binding SelectedEmployees}">
+        <ListView Grid.Column="0" ItemsSource="{Binding SelectedEmployees}" Margin="0,25,0,0">
         </ListView>
-        <ComboBox x:Name="Departments" Grid.Column="1" ItemsSource="{DynamicResource ResourceKey=Departments}">
+        <ComboBox x:Name="Departments" Grid.Column="1" ItemsSource="{DynamicResource ResourceKey=Departments}" Margin="81,148,73,148">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="SelectionChanged">
                     <i:InvokeCommandAction
@@ -29,5 +29,5 @@
                 </i:EventTrigger>
             </i:Interaction.Triggers>
         </ComboBox>
-    </Grid>-->
+    </Grid>
 </Window>

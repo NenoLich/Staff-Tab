@@ -34,9 +34,9 @@ namespace Staff_Tab
             FirstName = firstName;
             JobTitles = jobTitles;
 
-            Department department = departments.First(x => x.Name == departmentName);
+            Department department = departments.FirstOrDefault(x => x.Name == departmentName);
             Department = department is null ? new Department(departmentName) : department;
-            department.Hire(this);
+            department?.Hire(this);
 
             JobStatus = jobStatus;
         }
