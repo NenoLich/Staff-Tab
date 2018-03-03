@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Staff_Tab
 {
-    class Department: IComparable
+    public class Department : IComparable
     {
         List<Employee> employees=new List<Employee>();
 

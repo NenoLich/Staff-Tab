@@ -39,6 +39,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -57,14 +58,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Department.cs" />
-    <Compile Include="DepartmentCollection.cs" />
-    <Compile Include="EmployeeConverter.cs" />
-    <Compile Include="HourlyEmployee.cs" />
-    <Compile Include="JobStatus.cs" />
-    <Compile Include="PayFrequency.cs" />
-    <Compile Include="SalaryEmployee.cs" />
-    <Page Include="MainWindow.xaml">
+    <Compile Include="Model\Department.cs" />
+    <Compile Include="Model\DepartmentCollection.cs" />
+    <Compile Include="Services\DefaultDialogService.cs" />
+    <Compile Include="Services\EmployeeConverter.cs" />
+    <Compile Include="Model\HourlyEmployee.cs" />
+    <Compile Include="Model\JobStatus.cs" />
+    <Compile Include="Model\PayFrequency.cs" />
+    <Compile Include="Model\SalaryEmployee.cs" />
+    <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -72,8 +74,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Employee.cs" />
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Model\Employee.cs" />
+    <Compile Include="Services\IDialogService.cs" />
+    <Compile Include="Services\IFileService.cs" />
+    <Compile Include="Services\JsonFileService.cs" />
+    <Compile Include="Services\RelayCommand.cs" />
+    <Compile Include="ViewModel\EmployeeViewModel.cs" />
+    <Compile Include="ViewModel\StaffTabViewModel.cs" />
+    <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -104,6 +112,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\DefaultEmployee.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

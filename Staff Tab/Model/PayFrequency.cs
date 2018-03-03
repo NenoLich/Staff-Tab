@@ -7,7 +7,7 @@ namespace Staff_Tab
     /// Defines whether an employee is paid on an hourly basis or salary basis
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    enum PayFrequency
+    public enum PayFrequency
     {
         Salary,
         Hourly

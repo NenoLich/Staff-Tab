@@ -7,7 +7,7 @@ using System.Collections.ObjectModel;
 
 namespace Staff_Tab
 {
-    class DepartmentCollection: ObservableCollection<Department>
+    public class DepartmentCollection : ObservableCollection<Department>
     {
     }
 }

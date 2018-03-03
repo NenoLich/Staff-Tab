@@ -14,14 +14,14 @@ namespace Staff_Tab
         /// <summary>
         /// Annual salary rates. Only applies for employees whose pay frequency is "Salary"
         /// </summary>
-        public double AnnualSalary { get; protected set; }
+        public double? AnnualSalary { get; set; }
 
         [JsonConstructor]
         public SalaryEmployee(string secondName, string firstName, string jobTitles, string department, JobStatus jobStatus, int? typicalHours, double? annualSalary, double? hourlyRate) :
             base(secondName, firstName, jobTitles, department, jobStatus)
         {
             PayFrequency = PayFrequency.Salary;
-            AnnualSalary = annualSalary ?? 0;
+            AnnualSalary = annualSalary;
         }
     }
 }

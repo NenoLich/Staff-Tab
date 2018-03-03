@@ -24,6 +24,10 @@ namespace Staff_Tab
         public MainWindow()
         {
             InitializeComponent();
+
+            IFileService JsonFileService = new JsonFileService();
+            IDialogService defaultDialogService = new DefaultDialogService();
+            DataContext = new StaffTabViewModel(JsonFileService, defaultDialogService);
         }
     }
 }

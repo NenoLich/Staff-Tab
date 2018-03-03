@@ -18,20 +18,20 @@ namespace Staff_Tab
         /// 20 - Employee paid on a part-time, hourly basis; typically works a 4 hour day, 5 days a week; 
         /// 10 - Employee paid on a part-time, hourly basis; works 10 hours or less in a week.
         /// </summary>
-        public int TypicalHours { get; protected set; }
+        public int? TypicalHours { get; set; }
 
         /// <summary>
         /// The hourly salary rates for individuals whose pay frequency is "hourly"
         /// </summary>
-        public double HourlyRate { get; protected set; }
+        public double? HourlyRate { get; set; }
 
         [JsonConstructor]
         public HourlyEmployee(string secondName, string firstName, string jobTitles, string department, JobStatus jobStatus, int? typicalHours, double? annualSalary, double? hourlyRate) :
             base(secondName, firstName, jobTitles, department, jobStatus)
         {
             PayFrequency = PayFrequency.Hourly;
-            TypicalHours = typicalHours ?? 0;
-            HourlyRate = hourlyRate ?? 0;
+            TypicalHours = typicalHours;
+            HourlyRate = hourlyRate;
         }
     }
 }

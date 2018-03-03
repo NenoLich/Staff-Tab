@@ -7,7 +7,7 @@ namespace Staff_Tab
     /// Whether the employee was employed full- (F) or part-time (P).
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    enum JobStatus
+    public enum JobStatus
     {
         FullTime,
         PartTime

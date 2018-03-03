@@ -9,22 +9,23 @@ using System.Windows;
 
 namespace Staff_Tab
 {
-    abstract class Employee: IComparable
+    public abstract class Employee: IComparable
     {
         [JsonIgnore]
         protected static DepartmentCollection departments = (DepartmentCollection)Application.Current.FindResource("Departments");
 
-        public PayFrequency PayFrequency { get; }
-        public string SecondName { get; protected set; }
-        public string FirstName { get; protected set; }
+        public PayFrequency PayFrequency { get; set; }
+        public string SecondName { get; set; }
+        public string FirstName { get; set; }
+        public Uri ImageSource { get; set; }
 
         /// <summary>
         /// Title of employee
         /// </summary>
-        public string JobTitles { get; protected set; }
+        public string JobTitles { get; set; }
 
         public Department Department { get; set; }
-        public JobStatus JobStatus { get; protected set; }
+        public JobStatus JobStatus { get; set; }
 
         [JsonConstructor]
         protected Employee(string secondName, string firstName, string jobTitles, string departmentName, JobStatus jobStatus)
