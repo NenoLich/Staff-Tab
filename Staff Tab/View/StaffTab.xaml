@@ -18,14 +18,14 @@
                 <MenuItem Header="Сохранить" Command="{Binding SaveCommand}" />
             </MenuItem>
         </Menu>
-        <ListView Grid.Column="0" ItemsSource="{Binding SelectedEmployees}" Margin="0,25,0,0">
+        <ListView Grid.Column="0" ItemsSource="{Binding ElementName = Employees,Path=SecondName,Mode=TwoWay}" Margin="0,25,0,0">
         </ListView>
-        <ComboBox x:Name="Departments" Grid.Column="1" ItemsSource="{DynamicResource ResourceKey=Departments}" Margin="81,148,73,148">
+        <ComboBox x:Name="DepartmentsComboBox" Grid.Column="1" ItemsSource="{Binding Departments}" Margin="81,148,73,148">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="SelectionChanged">
                     <i:InvokeCommandAction
                             Command="{Binding DepartmentSelectionChangedCommand}"
-                            CommandParameter="{Binding ElementName=Departments,Path=SelectedItem}" />
+                            CommandParameter="{Binding ElementName=DepartmentsComboBox,Path=SelectedItem}" />
                 </i:EventTrigger>
             </i:Interaction.Triggers>
         </ComboBox>

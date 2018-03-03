@@ -4,6 +4,5 @@
              xmlns:local="clr-namespace:Staff_Tab"
              StartupUri="view/StaffTab.xaml">
     <Application.Resources>
-        <local:DepartmentCollection x:Key="Departments"/>
     </Application.Resources>
 </Application>

@@ -11,9 +11,7 @@ namespace Staff_Tab
 {
     class StaffTabViewModel : INotifyPropertyChanged
     {
-        private ObservableCollection<Employee> Employees;
-
-        public ObservableCollection<Employee> SelectedEmployees { get; set; }
+        private ObservableCollection<Employee> employees;
 
         IFileService fileService;
         IDialogService dialogService;
@@ -21,8 +19,29 @@ namespace Staff_Tab
         public StaffTabViewModel(IFileService fileService, IDialogService dialogService)
         {
             Employees = new ObservableCollection<Employee>();
+
             this.dialogService = dialogService;
             this.fileService = fileService;
+        }
+
+        public ObservableCollection<Department> Departments
+        {
+            get => Employee.departments;
+            set
+            {
+                Employee.departments = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public ObservableCollection<Employee> Employees
+        {
+            get => employees;
+            set
+            {
+                employees = value;
+                OnPropertyChanged();
+            }
         }
 
         #region Commands
@@ -68,7 +87,6 @@ namespace Staff_Tab
                               Employees.Clear();
                               foreach (Employee employee in fileService.Open(dialogService.FilePath))
                                   Employees.Add(employee);
-                              SelectedEmployees = Employees;
                               dialogService.ShowMessage("Файл открыт");
                           }
                       }
@@ -82,7 +100,7 @@ namespace Staff_Tab
 
         public RelayCommand DepartmentSelectionChangedCommand => departmentSelectionChangedCommand ??
                     (departmentSelectionChangedCommand = new RelayCommand(obj =>
-                      SelectedEmployees = Employees.Where(x => x.Department == obj as Department) as ObservableCollection<Employee>));
+                      Employees = Employees.Where(x => x.Department == obj as Department) as ObservableCollection<Employee>));
 
         #endregion
 

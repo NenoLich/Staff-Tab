@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace Staff_Tab
     public abstract class Employee: IComparable
     {
         [JsonIgnore]
-        protected static DepartmentCollection departments = (DepartmentCollection)Application.Current.FindResource("Departments");
+        public static ObservableCollection<Department> departments = new ObservableCollection<Department>();
 
         public PayFrequency PayFrequency { get; set; }
         public string SecondName { get; set; }
@@ -34,16 +35,20 @@ namespace Staff_Tab
             FirstName = firstName;
             JobTitles = jobTitles;
 
-            Department department = departments.FirstOrDefault(x => x.Name == departmentName);
-            Department = department is null ? new Department(departmentName) : department;
+            Department department = departments.FirstOrDefault(x => x.Title == departmentName);
+            if (department is null)
+            {
+                Department= new Department(departmentName);
+                departments.Add(Department);
+            }
+            else
+            {
+                Department = department;
+            }
+
             department?.Hire(this);
 
             JobStatus = jobStatus;
-        }
-
-        public override string ToString()
-        {
-            return $"{ FirstName } { SecondName }";
         }
 
         public int CompareTo(object obj)

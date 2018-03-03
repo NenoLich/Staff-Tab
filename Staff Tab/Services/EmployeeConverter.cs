@@ -27,7 +27,7 @@ namespace Staff_Tab
                     {
                         if (propertyInfo.Name == "Department")
                         {
-                            jo.Add(propertyInfo.Name, JToken.FromObject(((Department)propertyValue).Name, serializer));
+                            jo.Add(propertyInfo.Name, JToken.FromObject(((Department)propertyValue).Title, serializer));
                         }
                         else
                         {

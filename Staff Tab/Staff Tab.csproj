@@ -59,7 +59,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\Department.cs" />
-    <Compile Include="Model\DepartmentCollection.cs" />
     <Compile Include="Services\DefaultDialogService.cs" />
     <Compile Include="Services\EmployeeConverter.cs" />
     <Compile Include="Model\HourlyEmployee.cs" />
