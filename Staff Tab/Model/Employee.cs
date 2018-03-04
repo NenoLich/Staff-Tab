@@ -13,7 +13,7 @@ namespace Staff_Tab
     public abstract class Employee: IComparable
     {
         [JsonIgnore]
-        public static ObservableCollection<Department> departments = new ObservableCollection<Department>();
+        protected static ObservableCollection<Department> departments = new ObservableCollection<Department>();
 
         public PayFrequency PayFrequency { get; set; }
         public string SecondName { get; set; }
@@ -36,16 +36,7 @@ namespace Staff_Tab
             JobTitles = jobTitles;
 
             Department department = departments.FirstOrDefault(x => x.Title == departmentName);
-            if (department is null)
-            {
-                Department= new Department(departmentName);
-                departments.Add(Department);
-            }
-            else
-            {
-                Department = department;
-            }
-
+            Department = department is null ? new Department(departmentName) : department;
             department?.Hire(this);
 
             JobStatus = jobStatus;

@@ -65,6 +65,9 @@
     <Compile Include="Model\JobStatus.cs" />
     <Compile Include="Model\PayFrequency.cs" />
     <Compile Include="Model\SalaryEmployee.cs" />
+    <Compile Include="Services\MultiSelectorBehaviours\IListItemConverter.cs" />
+    <Compile Include="Services\MultiSelectorBehaviours\MultiSelectorBehaviours.cs" />
+    <Compile Include="Services\MultiSelectorBehaviours\TwoListSynchronizer.cs" />
     <Compile Include="View\StaffTab.xaml.cs">
       <DependentUpon>StaffTab.xaml</DependentUpon>
     </Compile>
@@ -116,5 +119,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

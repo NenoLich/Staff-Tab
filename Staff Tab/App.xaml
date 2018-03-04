@@ -4,5 +4,10 @@
              xmlns:local="clr-namespace:Staff_Tab"
              StartupUri="view/StaffTab.xaml">
     <Application.Resources>
+        <Style TargetType="ScrollViewer">
+            <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="HorizontalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="CanContentScroll" Value="True"/>
+        </Style>
     </Application.Resources>
 </Application>

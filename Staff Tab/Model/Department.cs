@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Staff_Tab
 {
-    public class Department : IComparable
+    public class Department
     {
         List<Employee> employees=new List<Employee>();
 
@@ -23,9 +23,14 @@ namespace Staff_Tab
             employee.Department = this;
         }
 
-        public int CompareTo(object obj)
+        public override bool Equals(object other)
         {
-            return Title.CompareTo(obj);
+            return Title == (other as Department).Title;
+        }
+
+        public override int GetHashCode()
+        {
+            return this.Title.GetHashCode();
         }
     }
 }

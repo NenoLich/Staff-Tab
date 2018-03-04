@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Collections.ObjectModel;
+using System.Windows.Controls;
+using System.Collections;
 
 namespace Staff_Tab
 {
     class StaffTabViewModel : INotifyPropertyChanged
     {
         private ObservableCollection<Employee> employees;
-
+        private ObservableCollection<Department> departments;
+        private ObservableCollection<Department> selectedDepartments;
+        
         IFileService fileService;
         IDialogService dialogService;
 
@@ -26,10 +30,20 @@ namespace Staff_Tab
 
         public ObservableCollection<Department> Departments
         {
-            get => Employee.departments;
+            get => departments;
             set
             {
-                Employee.departments = value;
+                departments = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public ObservableCollection<Department> SelectedDepartments
+        {
+            get => selectedDepartments;
+            set
+            {
+                selectedDepartments = value;
                 OnPropertyChanged();
             }
         }
@@ -48,6 +62,7 @@ namespace Staff_Tab
 
         private RelayCommand saveCommand;
         private RelayCommand openCommand;
+        private RelayCommand departmentsExpanded;
         private RelayCommand departmentSelectionChangedCommand;
 
         public RelayCommand SaveCommand
@@ -89,10 +104,30 @@ namespace Staff_Tab
                                   Employees.Add(employee);
                               dialogService.ShowMessage("Файл открыт");
                           }
+
+                          Departments = new ObservableCollection<Department>(Employees.Select(x => x.Department).Distinct());
                       }
                       catch (Exception ex)
                       {
                           dialogService.ShowMessage(ex.Message);
+                      }
+                  }));
+            }
+        }
+
+        public RelayCommand DepartmentsExpanded
+        {
+            get
+            {
+                return departmentsExpanded ??
+                  (departmentsExpanded = new RelayCommand(obj =>
+                  {
+                      Expander expander = obj as Expander;
+
+                      foreach (Department department in Departments)
+                      {
+                          
+
                       }
                   }));
             }

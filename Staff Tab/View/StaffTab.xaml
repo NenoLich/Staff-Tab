@@ -6,28 +6,122 @@
         xmlns:local="clr-namespace:Staff_Tab"
         xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
         mc:Ignorable="d"
-        Title="Staff Tab" Height="350" Width="525">
-    <Grid >
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Menu Grid.ColumnSpan="2" Height="25" VerticalAlignment="Top">
+        Title="Staff Tab" Height="500" Width="700">
+    <Window.Resources>
+        <DataTemplate x:Key="DepartmentCheckBox" x:Shared="false">
+            <CheckBox Content="{Binding Path=Title}"
+                  Margin="3"
+                  IsChecked="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
+                  AncestorType={x:Type ListBoxItem}},
+                  Path=IsSelected}" />
+        </DataTemplate>
+    </Window.Resources>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" Height="25" VerticalAlignment="Top">
             <MenuItem Header="Файл" Height="25" Width="51">
-                <MenuItem Header="Открыть" Command="{Binding OpenCommand}" />
-                <MenuItem Header="Сохранить" Command="{Binding SaveCommand}" />
+                <MenuItem Header="New" Command="{Binding }" />
+                <MenuItem Header="Open" Command="{Binding OpenCommand}" />
+                <MenuItem Header="Save" Command="{Binding }" />
+                <MenuItem Header="Save As" Command="{Binding SaveCommand}" />
+                <Separator/>
+                <MenuItem Header="Exit" Command="{Binding }" />
             </MenuItem>
         </Menu>
-        <ListView Grid.Column="0" ItemsSource="{Binding ElementName = Employees,Path=SecondName,Mode=TwoWay}" Margin="0,25,0,0">
-        </ListView>
-        <ComboBox x:Name="DepartmentsComboBox" Grid.Column="1" ItemsSource="{Binding Departments}" Margin="81,148,73,148">
-            <i:Interaction.Triggers>
-                <i:EventTrigger EventName="SelectionChanged">
-                    <i:InvokeCommandAction
-                            Command="{Binding DepartmentSelectionChangedCommand}"
-                            CommandParameter="{Binding ElementName=DepartmentsComboBox,Path=SelectedItem}" />
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
-        </ComboBox>
-    </Grid>
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition x:Name="Collumn3" Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ScrollViewer Grid.Column="0">
+                <ListView Grid.Column="0" ItemsSource="{Binding Employees}" VirtualizingStackPanel.IsVirtualizing="True" 
+                          VirtualizingStackPanel.VirtualizationMode="Recycling" >
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Second Name">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=SecondName}"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="First Name">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=FirstName}"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Job Titles">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=JobTitles}"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Department" >
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=Department}"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Full or Part-Time">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=JobStatus}"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Salary or Hourly" >
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=PayFrequency}"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Typical Hours" >
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=TypicalHours}"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Annual Salary" >
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=AnnualSalary}"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Hourly Rate" >
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=HourlyRate}"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel>
+                            </VirtualizingStackPanel>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                </ListView>
+            </ScrollViewer>
+            <GridSplitter Grid.Column="1" ShowsPreview="False" Width="3" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
+            <ScrollViewer Grid.Column="2">
+                <Expander x:Name="Departments" 
+                          Header="Departments">
+                    <ListBox ItemsSource="{Binding Departments}"
+                             ItemTemplate="{StaticResource DepartmentCheckBox}"
+                             local:MultiSelectorBehaviours.SynchronizedSelectedItems = "{Binding SelectedDepartments}"
+                             SelectionMode="Multiple">
+                    </ListBox>
+                </Expander>
+            </ScrollViewer>
+        </Grid>
+    </DockPanel>
 </Window>

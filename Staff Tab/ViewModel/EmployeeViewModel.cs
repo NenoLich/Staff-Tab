@@ -80,14 +80,9 @@ namespace Staff_Tab
             }
         }
 
-        public Department Department
+        public string Department
         {
-            get { return employee.Department; }
-            set
-            {
-                employee.Department = value;
-                OnPropertyChanged();
-            }
+            get { return employee.Department.Title; }
         }
 
         public JobStatus JobStatus
