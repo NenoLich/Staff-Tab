@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Staff_Tab
 {
+    /// <summary>
+    /// Универсальный интерфейс сериализации
+    /// </summary>
     interface IFileService
     {
         ObservableCollection<Employee> Open(string filename);

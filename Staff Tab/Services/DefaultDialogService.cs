@@ -9,6 +9,9 @@ using System.Windows;
 
 namespace Staff_Tab
 {
+    /// <summary>
+    /// Служба управления диалоговых окон
+    /// </summary>
     public class DefaultDialogService : IDialogService
     {
         public string FilePath { get; set; }

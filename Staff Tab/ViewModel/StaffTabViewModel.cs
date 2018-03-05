@@ -9,9 +9,14 @@ using System.Collections.ObjectModel;
 using System.Windows.Controls;
 using System.Collections;
 using System.Windows;
+using System.Windows.Media;
+
 
 namespace Staff_Tab
 {
+    /// <summary>
+    /// Основная модель представления
+    /// </summary>
     class StaffTabViewModel : INotifyPropertyChanged
     {
         private ObservableCollection<Employee> employees;
@@ -53,6 +58,9 @@ namespace Staff_Tab
             }
         }
 
+        /// <summary>
+        /// Департаменты, используемые для отображения
+        /// </summary>
         public ObservableCollection<Department> SelectedDepartments
         {
             get => selectedDepartments;
@@ -63,6 +71,9 @@ namespace Staff_Tab
             }
         }
 
+        /// <summary>
+        /// Сотрудники, используемые для отображения
+        /// </summary>
         public ObservableCollection<Employee> SelectedEmployees
         {
             get => selectedEmployees;
@@ -80,7 +91,10 @@ namespace Staff_Tab
         private RelayCommand saveAsCommand;
         private RelayCommand openCommand;
         private RelayCommand departmentSelectionChangedCommand;
+        private RelayCommand selectAllCommand;
+        private RelayCommand unSelectAllCommand;
         private RelayCommand closingCommand;
+        private RelayCommand addDepartment;
 
         public RelayCommand NewCommand
         {
@@ -162,6 +176,64 @@ namespace Staff_Tab
             }
         }
 
+        /// <summary>
+        /// Выделение всех Checkbox'ов внутри передаваемого ListBox'а
+        /// </summary>
+        public RelayCommand SelectAllCommand
+        {
+            get
+            {
+                return selectAllCommand ??
+                    (selectAllCommand = new RelayCommand(obj =>
+                      {
+                          ListBox listBox = obj as ListBox;
+                          listBox.SelectAll();
+                      },
+                      obj=>obj is ListBox));
+            }
+        }
+
+        /// <summary>
+        /// Снятие выделения всех Checkbox'ов внутри передаваемого ListBox'а
+        /// </summary>
+        public RelayCommand UnSelectAllCommand
+        {
+            get
+            {
+                return unSelectAllCommand ??
+                    (unSelectAllCommand = new RelayCommand(obj =>
+                    {
+                        ListBox listBox = obj as ListBox;
+                        var checkboxes = FindVisualChildren<CheckBox>(listBox);
+                        foreach (CheckBox item in checkboxes)
+                        {
+                            item.IsChecked = false;
+                        }
+                    },
+                      obj => obj is ListBox));
+            }
+        }
+
+        /// <summary>
+        /// Добавление нового подразделения
+        /// </summary>
+        public RelayCommand AddDepartment
+        {
+            get
+            {
+                return addDepartment ??
+                    (addDepartment = new RelayCommand(obj =>
+                    {
+                        TextBox textBox = obj as TextBox;
+                        Departments?.Add(new Department(textBox.Text));
+                        textBox.Text = string.Empty;
+                    }));
+            }
+        }
+
+        /// <summary>
+        /// Фильтрация подразделений для отображения
+        /// </summary>
         public RelayCommand DepartmentSelectionChangedCommand
         {
             get
@@ -169,13 +241,16 @@ namespace Staff_Tab
                 return departmentSelectionChangedCommand ??
                             (departmentSelectionChangedCommand = new RelayCommand(obj =>
                             {
-                                SelectedEmployees = new ObservableCollection<Employee>(employees.Join(SelectedDepartments, x => x.Department, y => y, (x, y) => x));
+                              SelectedEmployees = new ObservableCollection<Employee>(employees.Join(SelectedDepartments, x => x.Department, y => y, (x, y) => x));
                             }));
             }
-        }
+          }
 
         #endregion
 
+        /// <summary>
+        /// Проверка наличия несохраненных изменений
+        /// </summary>
         private void CheckUnsavedData()
         {
             if (updated)
@@ -189,6 +264,9 @@ namespace Staff_Tab
             }
         }
 
+        /// <summary>
+        /// Сохранение в файл
+        /// </summary>
         private void SaveFile()
         {
             try
@@ -205,6 +283,9 @@ namespace Staff_Tab
             }
         }
 
+        /// <summary>
+        /// Сохранение в последний используемый файл
+        /// </summary>
         private void SaveLastFile()
         {
             try
@@ -219,12 +300,44 @@ namespace Staff_Tab
             }
         }
 
+        /// <summary>
+        /// Обнуление основных параметров
+        /// </summary>
         private void Reset()
         {
             Departments.Clear();
             employees.Clear();
             updated = false;
             lastFilePath = null;
+        }
+
+        /// <summary>
+        /// Finds the visual child.
+        /// </summary>
+        /// <typeparam name="childItem">The type of the child item.</typeparam>
+        /// <param name="obj">The obj.</param>
+        /// <returns></returns>
+        private IEnumerable<T> FindVisualChildren<T>(DependencyObject obj) where T : DependencyObject
+        {
+            for (int i = 0; i < VisualTreeHelper.GetChildrenCount(obj); i++)
+            {
+                DependencyObject child = VisualTreeHelper.GetChild(obj, i);
+                if (child != null && child is T)
+                {
+                    yield return (T)child;
+                }
+                else
+                {
+                    var childOfChild = FindVisualChildren<T>(child);
+                    if (childOfChild != null)
+                    {
+                        foreach (var subchild in childOfChild)
+                        {
+                            yield return subchild;
+                        }
+                    }
+                }
+            }
         }
 
         #region INotifyPropertyChanged implementation

@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace Staff_Tab
 {
-    class EmployeeViewModel:INotifyPropertyChanged
+    /// <summary>
+    /// Модель представления сотрудника с поддержкой полиморфизма
+    /// </summary>
+    class EmployeeViewModel: INotifyPropertyChanged
     {
         private Employee employee;
         private SalaryEmployee salaryEmployee;

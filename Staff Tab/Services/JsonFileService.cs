@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace Staff_Tab
 {
+    /// <summary>
+    /// Сериализация и десериализаци в JSon
+    /// </summary>
     public class JsonFileService : IFileService
     {
         public ObservableCollection<Employee> Open(string filename)

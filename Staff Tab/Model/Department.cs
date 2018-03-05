@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace Staff_Tab
 {
+    /// <summary>
+    /// Подразделение
+    /// </summary>
     public class Department
     {
         List<Employee> employees=new List<Employee>();
 
+        /// <summary>
+        /// Название подразделения
+        /// </summary>
         public string Title { get; private set; }
 
         public Department(string name)
@@ -17,6 +23,10 @@ namespace Staff_Tab
             Title = name;
         }
 
+        /// <summary>
+        /// Зачисление в штат
+        /// </summary>
+        /// <param name="employee"></param>
         public void Hire(Employee employee)
         {
             employees.Add(employee);

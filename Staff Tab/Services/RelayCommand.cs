@@ -7,6 +7,9 @@ using System.Windows.Input;
 
 namespace Staff_Tab
 {
+    /// <summary>
+    /// Кастомная реализация ICommand
+    /// </summary>
     public class RelayCommand : ICommand
     {
         private Action<object> execute;

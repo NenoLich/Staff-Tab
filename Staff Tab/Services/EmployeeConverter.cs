@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace Staff_Tab
 {
+    /// <summary>
+    /// Конвертер для Json-сериализации объектов класса Employee со вложенным свойством Department
+    /// </summary>
     class EmployeeConverter : JsonConverter
     {
         #region implemented abstract members of JsonConverter

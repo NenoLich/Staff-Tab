@@ -10,6 +10,9 @@ using System.Windows;
 
 namespace Staff_Tab
 {
+    /// <summary>
+    /// Сотрудник компании
+    /// </summary>
     public abstract class Employee
     {
         [JsonIgnore]

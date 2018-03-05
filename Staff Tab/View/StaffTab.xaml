@@ -147,18 +147,45 @@
             <ScrollViewer Grid.Column="2">
                 <Expander x:Name="Departments" 
                           Header="Departments">
-                    <ListBox ItemsSource="{Binding Departments}"
+                    <StackPanel>
+                        <ListBox x:Name="DepartmentListBox"
+                             ItemsSource="{Binding Departments}"
                              ItemTemplate="{StaticResource DepartmentCheckBox}"
                              local:MultiSelectorBehaviours.SynchronizedSelectedItems = "{Binding SelectedDepartments}"
                              SelectionMode="Multiple">
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="SelectionChanged" >
-                                <i:InvokeCommandAction 
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="SelectionChanged" >
+                                    <i:InvokeCommandAction 
                                     Command="{Binding DepartmentSelectionChangedCommand}"/>
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>
-
-                    </ListBox>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </ListBox>
+                        <CheckBox Content="Select All"
+                                  Margin="3">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Checked" >
+                                    <i:InvokeCommandAction 
+                                    Command="{Binding SelectAllCommand}"
+                                    CommandParameter="{Binding ElementName=DepartmentListBox}"/>
+                                </i:EventTrigger>
+                                <i:EventTrigger EventName="UnChecked" >
+                                    <i:InvokeCommandAction 
+                                    Command="{Binding UnSelectAllCommand}"
+                                    CommandParameter="{Binding ElementName=DepartmentListBox}"/>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </CheckBox>
+                        <DockPanel>
+                            <TextBlock Text="Add" DockPanel.Dock="Left"/>
+                            <TextBox x:Name="AddTextBox">
+                                <TextBox.InputBindings>
+                                    <KeyBinding Command="{Binding AddDepartment}" 
+                                                CommandParameter="{Binding ElementName=AddTextBox}" 
+                                                Key="Enter" />
+                                </TextBox.InputBindings>
+                            </TextBox>
+                        </DockPanel>
+                    </StackPanel>
                 </Expander>
             </ScrollViewer>
         </Grid>
