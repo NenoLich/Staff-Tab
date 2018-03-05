@@ -10,7 +10,7 @@ using System.Windows;
 
 namespace Staff_Tab
 {
-    public abstract class Employee: IComparable
+    public abstract class Employee
     {
         [JsonIgnore]
         protected static ObservableCollection<Department> departments = new ObservableCollection<Department>();
@@ -42,9 +42,14 @@ namespace Staff_Tab
             JobStatus = jobStatus;
         }
 
-        public int CompareTo(object obj)
+        public override bool Equals(object other)
         {
-            return SecondName.CompareTo(obj);
+            return SecondName == (other as Employee)?.SecondName && FirstName == (other as Employee)?.FirstName;
+        }
+
+        public override int GetHashCode()
+        {
+            return SecondName.GetHashCode();
         }
     }
 }

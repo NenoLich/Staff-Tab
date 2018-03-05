@@ -12,19 +12,25 @@
             <CheckBox Content="{Binding Path=Title}"
                   Margin="3"
                   IsChecked="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
-                  AncestorType={x:Type ListBoxItem}},
-                  Path=IsSelected}" />
+                  AncestorType={x:Type ListBoxItem}}, Path=IsSelected}" >
+            </CheckBox>
         </DataTemplate>
     </Window.Resources>
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Closing" >
+            <i:InvokeCommandAction 
+                Command="{Binding ClosingCommand}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
     <DockPanel>
         <Menu DockPanel.Dock="Top" Height="25" VerticalAlignment="Top">
             <MenuItem Header="Файл" Height="25" Width="51">
-                <MenuItem Header="New" Command="{Binding }" />
+                <MenuItem Header="New" Command="{Binding NewCommand}" />
                 <MenuItem Header="Open" Command="{Binding OpenCommand}" />
-                <MenuItem Header="Save" Command="{Binding }" />
-                <MenuItem Header="Save As" Command="{Binding SaveCommand}" />
+                <MenuItem Header="Save" IsEnabled="{Binding Updated}" Command="{Binding SaveCommand}" />
+                <MenuItem Header="Save As" Command="{Binding SaveAsCommand}" />
                 <Separator/>
-                <MenuItem Header="Exit" Command="{Binding }" />
+                <MenuItem Header="Exit" Command="{Binding ClosingCommand}" />
             </MenuItem>
         </Menu>
         <Grid >
@@ -34,70 +40,96 @@
                 <ColumnDefinition x:Name="Collumn3" Width="*"/>
             </Grid.ColumnDefinitions>
             <ScrollViewer Grid.Column="0">
-                <ListView Grid.Column="0" ItemsSource="{Binding Employees}" VirtualizingStackPanel.IsVirtualizing="True" 
+                <ListView Grid.Column="0" ItemsSource="{Binding SelectedEmployees}" VirtualizingStackPanel.IsVirtualizing="True" 
                           VirtualizingStackPanel.VirtualizationMode="Recycling" >
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            <Setter Property="VerticalContentAlignment"  Value="Stretch"/>
+                        </Style>
+                    </ListView.ItemContainerStyle>
                     <ListView.View>
-                        <GridView>
+                        <GridView AllowsColumnReorder="true"
+                                    ColumnHeaderToolTip="Employee Information">
                             <GridViewColumn Header="Second Name">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
-                                        <TextBlock Text="{Binding Path=SecondName}"/>
+                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
+                                            <TextBlock Text="{Binding SecondName}" Margin="6,3"/>
+                                        </Border>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
                             <GridViewColumn Header="First Name">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
-                                        <TextBlock Text="{Binding Path=FirstName}"/>
+                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
+                                            <TextBlock Text="{Binding FirstName}" Margin="6,3"/>
+                                        </Border>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
                             <GridViewColumn Header="Job Titles">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
-                                        <TextBlock Text="{Binding Path=JobTitles}"/>
+                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
+                                            <TextBlock Text="{Binding JobTitles}" Margin="6,3"/>
+                                        </Border>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
                             <GridViewColumn Header="Department" >
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
-                                        <TextBlock Text="{Binding Path=Department}"/>
+                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
+                                            <TextBlock DataContext="{Binding Path=Department}"
+                                                       Text="{Binding Path=Title}" Margin="6,3"/>
+                                        </Border>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
                             <GridViewColumn Header="Full or Part-Time">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
-                                        <TextBlock Text="{Binding Path=JobStatus}"/>
+                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
+                                            <TextBlock Text="{Binding JobStatus}" Margin="6,3"/>
+                                        </Border>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
                             <GridViewColumn Header="Salary or Hourly" >
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
-                                        <TextBlock Text="{Binding Path=PayFrequency}"/>
+                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
+                                            <TextBlock Text="{Binding PayFrequency}" Margin="6,3"/>
+                                        </Border>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
                             <GridViewColumn Header="Typical Hours" >
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
-                                        <TextBlock Text="{Binding Path=TypicalHours}"/>
+                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
+                                            <TextBlock Text="{Binding TypicalHours}" Margin="6,3"/>
+                                        </Border>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
                             <GridViewColumn Header="Annual Salary" >
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
-                                        <TextBlock Text="{Binding Path=AnnualSalary}"/>
+                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
+                                            <TextBlock Text="{Binding AnnualSalary}" Margin="6,3"/>
+                                        </Border>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
                             <GridViewColumn Header="Hourly Rate" >
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
-                                        <TextBlock Text="{Binding Path=HourlyRate}"/>
+                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
+                                            <TextBlock Text="{Binding HourlyRate}" Margin="6,3"/>
+                                        </Border>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
@@ -119,6 +151,13 @@
                              ItemTemplate="{StaticResource DepartmentCheckBox}"
                              local:MultiSelectorBehaviours.SynchronizedSelectedItems = "{Binding SelectedDepartments}"
                              SelectionMode="Multiple">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="SelectionChanged" >
+                                <i:InvokeCommandAction 
+                                    Command="{Binding DepartmentSelectionChangedCommand}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+
                     </ListBox>
                 </Expander>
             </ScrollViewer>

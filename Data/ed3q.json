@@ -1,0 +1,2955 @@
+[
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 101442.0,
+    "SecondName": "AARON",
+    "FirstName": "JEFFERY M",
+    "JobTitles": "SERGEANT",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 94122.0,
+    "SecondName": "AARON",
+    "FirstName": "KARINA",
+    "JobTitles": "POLICE OFFICER (ASSIGNED AS DETECTIVE)",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 101592.0,
+    "SecondName": "AARON",
+    "FirstName": "KIMBERLEI R",
+    "JobTitles": "CHIEF CONTRACT EXPEDITER",
+    "Department": "GENERAL SERVICES",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 110064.0,
+    "SecondName": "ABAD JR",
+    "FirstName": "VICENTE M",
+    "JobTitles": "CIVIL ENGINEER IV",
+    "Department": "WATER MGMNT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 20,
+    "HourlyRate": 1986.0,
+    "SecondName": "ABASCAL",
+    "FirstName": "REECE E",
+    "JobTitles": "TRAFFIC CONTROL AIDE-HOURLY",
+    "Department": "OEMC",
+    "JobStatus": "PartTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 50436.0,
+    "SecondName": "ABBASI",
+    "FirstName": "CHRISTOPHER",
+    "JobTitles": "STAFF ASST TO THE ALDERMAN",
+    "Department": "CITY COUNCIL",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 461.0,
+    "SecondName": "ABBATACOLA",
+    "FirstName": "ROBERT J",
+    "JobTitles": "ELECTRICAL MECHANIC",
+    "Department": "AVIATION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 356.0,
+    "SecondName": "ABBATE",
+    "FirstName": "JOSEPH L",
+    "JobTitles": "POOL MOTOR TRUCK DRIVER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 103350.0,
+    "SecondName": "ABBATEMARCO",
+    "FirstName": "JAMES J",
+    "JobTitles": "FIRE ENGINEER-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93354.0,
+    "SecondName": "ABBATE",
+    "FirstName": "TERRY M",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 20,
+    "HourlyRate": 265.0,
+    "SecondName": "ABBOTT",
+    "FirstName": "BETTY L",
+    "JobTitles": "FOSTER GRANDPARENT",
+    "Department": "FAMILY & SUPPORT",
+    "JobStatus": "PartTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "ABDALLAH",
+    "FirstName": "ZAID",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 87006.0,
+    "SecondName": "ABDELHADI",
+    "FirstName": "ABDALMAHD",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 102228.0,
+    "SecondName": "ABDELLATIF",
+    "FirstName": "AREF R",
+    "JobTitles": "FIREFIGHTER (PER ARBITRATORS AWARD)-PARAMEDIC",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "ABDELMAJEID",
+    "FirstName": "AZIZ",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 91272.0,
+    "SecondName": "ABDOLLAHZADEH",
+    "FirstName": "ALI",
+    "JobTitles": "FIREFIGHTER/PARAMEDIC",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 111492.0,
+    "SecondName": "ABDUL-KARIM",
+    "FirstName": "MUHAMMAD A",
+    "JobTitles": "ENGINEERING TECHNICIAN VI",
+    "Department": "WATER MGMNT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 95484.0,
+    "SecondName": "ABDULLAH",
+    "FirstName": "DANIEL N",
+    "JobTitles": "FIREFIGHTER-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 20,
+    "HourlyRate": 1768.0,
+    "SecondName": "ABDULLAH",
+    "FirstName": "LAKENYA N",
+    "JobTitles": "CROSSING GUARD",
+    "Department": "OEMC",
+    "JobStatus": "PartTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 461.0,
+    "SecondName": "ABDULLAH",
+    "FirstName": "RASHAD",
+    "JobTitles": "ELECTRICAL MECHANIC (AUTOMOTIVE)",
+    "Department": "GENERAL SERVICES",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 65448.0,
+    "SecondName": "ABDULSATTAR",
+    "FirstName": "MUDHAR",
+    "JobTitles": "CIVIL ENGINEER II",
+    "Department": "WATER MGMNT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 2143.0,
+    "SecondName": "ABDUL-SHAKUR",
+    "FirstName": "TAHIR",
+    "JobTitles": "GENERAL LABORER - DSS",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "ABEJERO",
+    "FirstName": "JASON V",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 82614.0,
+    "SecondName": "ABERCROMBIE IV",
+    "FirstName": "EARL S",
+    "JobTitles": "PARAMEDIC I/C",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 356.0,
+    "SecondName": "ABERCROMBIE",
+    "FirstName": "TIMOTHY",
+    "JobTitles": "MOTOR TRUCK DRIVER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 48078.0,
+    "SecondName": "ABFALL",
+    "FirstName": "RICHARD C",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 20,
+    "HourlyRate": 251.0,
+    "SecondName": "ABIOYE",
+    "FirstName": "ADEWOLE A",
+    "JobTitles": "LIBRARY ASSOCIATE - HOURLY",
+    "Department": "PUBLIC LIBRARY",
+    "JobStatus": "PartTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 76266.0,
+    "SecondName": "ABNEY",
+    "FirstName": "PATRICK",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 48078.0,
+    "SecondName": "ABOUASSI",
+    "FirstName": "CHADI",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 110064.0,
+    "SecondName": "ABOUELKHEIR",
+    "FirstName": "HASSAN A",
+    "JobTitles": "SENIOR PROGRAMMER/ANALYST",
+    "Department": "FAMILY & SUPPORT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 110064.0,
+    "SecondName": "ABRAHAM",
+    "FirstName": "GIRLEY T",
+    "JobTitles": "CIVIL ENGINEER IV",
+    "Department": "WATER MGMNT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 55644.0,
+    "SecondName": "ABRAHAM",
+    "FirstName": "KELVIN",
+    "JobTitles": "ENGINEERING TECHNICIAN V",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 80016.0,
+    "SecondName": "ABRAHAM",
+    "FirstName": "NANCY A",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 35,
+    "HourlyRate": 20.0,
+    "SecondName": "ABRAHAMSON",
+    "FirstName": "MICHAEL C",
+    "JobTitles": "STUDENT INTERN - MAYOR'S FELLOWS",
+    "Department": "MAYOR'S OFFICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 72510.0,
+    "SecondName": "ABRAM",
+    "FirstName": "ANTHONY A",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 65820.0,
+    "SecondName": "ABRAMAVICIUS",
+    "FirstName": "ANNA A",
+    "JobTitles": "SUPERINTENDENT OF SPECIAL TRAFFIC SERVICES",
+    "Department": "OEMC",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 3621.0,
+    "SecondName": "ABRAMS",
+    "FirstName": "DANIELLE T",
+    "JobTitles": "SANITATION LABORER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 128970.0,
+    "SecondName": "ABRAMSKI",
+    "FirstName": "JOHN E",
+    "JobTitles": "AMBULANCE COMMANDER",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 68616.0,
+    "SecondName": "ABRAMSON",
+    "FirstName": "NICHOLAS",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 356.0,
+    "SecondName": "ABRAMS",
+    "FirstName": "SAMUEL A",
+    "JobTitles": "POOL MOTOR TRUCK DRIVER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 4507.0,
+    "SecondName": "ABRAMS",
+    "FirstName": "TIFFANY",
+    "JobTitles": "OPERATING ENGINEER-GROUP C",
+    "Department": "WATER MGMNT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 89148.0,
+    "SecondName": "ABRATANSKI",
+    "FirstName": "MARK A",
+    "JobTitles": "FIREFIGHTER-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 4488.0,
+    "SecondName": "ABREU",
+    "FirstName": "DILAN",
+    "JobTitles": "SEWER BRICKLAYER",
+    "Department": "WATER MGMNT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 101712.0,
+    "SecondName": "ABREU",
+    "FirstName": "ROBERTO J",
+    "JobTitles": "TRAFFIC SIGNAL REPAIRMAN",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 70092.0,
+    "SecondName": "ABREU",
+    "FirstName": "ROSITA",
+    "JobTitles": "PERSONAL COMPUTER OPERATOR III",
+    "Department": "HEALTH",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 99324.0,
+    "SecondName": "ABREU",
+    "FirstName": "VICTOR",
+    "JobTitles": "FIREFIGHTER-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "ABRON",
+    "FirstName": "FLOYD",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 48078.0,
+    "SecondName": "ABRON",
+    "FirstName": "KIMYENNA D",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 461.0,
+    "SecondName": "ABRONS",
+    "FirstName": "KENNETH L",
+    "JobTitles": "ELECTRICAL MECHANIC",
+    "Department": "AVIATION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84420.0,
+    "SecondName": "ABUBAKER",
+    "FirstName": "MOHAMMED G",
+    "JobTitles": "SENIOR ENVIRONMENTAL INSPECTOR",
+    "Department": "HEALTH",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 76266.0,
+    "SecondName": "ABUDAYEH",
+    "FirstName": "ELIAS",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 48078.0,
+    "SecondName": "ABUEID",
+    "FirstName": "EID I",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 4825.0,
+    "SecondName": "ABUHASHISH",
+    "FirstName": "AWWAD",
+    "JobTitles": "PLUMBER",
+    "Department": "WATER MGMNT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 72510.0,
+    "SecondName": "ABURIZEG",
+    "FirstName": "MOHAMMAD",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 92388.0,
+    "SecondName": "ABUTALEB",
+    "FirstName": "AHMAD H",
+    "JobTitles": "CIVIL ENGINEER II",
+    "Department": "WATER MGMNT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 97440.0,
+    "SecondName": "ABUZANAT",
+    "FirstName": "ABDALLA H",
+    "JobTitles": "POLICE OFFICER (ASSIGNED AS DETECTIVE)",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 3622.0,
+    "SecondName": "ACCARDI",
+    "FirstName": "JOHNNA L",
+    "JobTitles": "EQUIPMENT DISPATCHER",
+    "Department": "AVIATION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 402.0,
+    "SecondName": "ACCARDO",
+    "FirstName": "ANTHONY D",
+    "JobTitles": "CONSTRUCTION LABORER",
+    "Department": "AVIATION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 72510.0,
+    "SecondName": "ACCARDO",
+    "FirstName": "ANTHONY V",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 87006.0,
+    "SecondName": "ACCARDO",
+    "FirstName": "JENNIFER A",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "ACCARDO",
+    "FirstName": "THOMAS J",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 117660.0,
+    "SecondName": "ACCIARI",
+    "FirstName": "MICHAEL G",
+    "JobTitles": "DIVISION SUPERINTENDENT",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 3613.0,
+    "SecondName": "ACCIARI",
+    "FirstName": "NICHOLAS B",
+    "JobTitles": "MOTOR TRUCK DRIVER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 66300.0,
+    "SecondName": "ACCURSO",
+    "FirstName": "MARY K",
+    "JobTitles": "PRESS AIDE I",
+    "Department": "MAYOR'S OFFICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "AARON F",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 87006.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "ALEJANDRO R",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "BIENVENIDO",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 73440.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "DAILHA",
+    "JobTitles": "COMMUNICABLE DISEASE CONTROL INVESTIGATOR II",
+    "Department": "HEALTH",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 72510.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "DAVID M",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 87006.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "EDWARD",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 43800.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "EDWIN",
+    "JobTitles": "DETENTION AIDE",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 97386.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "EDWIN C",
+    "JobTitles": "FIREFIGHTER",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 76266.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "ERIC",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 121818.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "GILBERT",
+    "JobTitles": "LIEUTENANT-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "ILIA",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "JANETE",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "JASON M",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 402.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "JAVIER",
+    "JobTitles": "ASPHALT LABORER",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 57912.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "JOSUE",
+    "JobTitles": "POLICE COMMUNICATIONS OPERATOR II",
+    "Department": "OEMC",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93666.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "MANUEL A",
+    "JobTitles": "FIREFIGHTER",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 100980.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "MARCO A",
+    "JobTitles": "POLICE OFFICER (ASSIGNED AS DETECTIVE)",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93300.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "MARISOL",
+    "JobTitles": "SENIOR PUBLIC INFORMATION OFFICER",
+    "Department": "BUSINESS AFFAIRS",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "MARTIN J",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 70644.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "MIKE",
+    "JobTitles": "AVIATION SECURITY OFFICER",
+    "Department": "AVIATION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "NADINE M",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "RAFAEL",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 56304.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "REVA L",
+    "JobTitles": "PARAMEDIC",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 3204.0,
+    "SecondName": "ACEVEDO",
+    "FirstName": "STEVEN A",
+    "JobTitles": "POOL MOTOR TRUCK DRIVER",
+    "Department": "AVIATION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 87006.0,
+    "SecondName": "ACEVES",
+    "FirstName": "JUAN C",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93354.0,
+    "SecondName": "ACEVEZ",
+    "FirstName": "ANTHONY E",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 10,
+    "HourlyRate": 2848.0,
+    "SecondName": "ACHA",
+    "FirstName": "SHARAZAN MARLENE",
+    "JobTitles": "POOL MOTOR TRUCK DRIVER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "PartTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 127068.0,
+    "SecondName": "ACHILLES",
+    "FirstName": "AMBER L",
+    "JobTitles": "CHIEF ASST CORPORATION COUNSEL",
+    "Department": "LAW",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93354.0,
+    "SecondName": "ACHILLY",
+    "FirstName": "LISA S",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 99324.0,
+    "SecondName": "ACHTEL",
+    "FirstName": "SCOTT R",
+    "JobTitles": "FIREFIGHTER-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 82614.0,
+    "SecondName": "ACKERMANN",
+    "FirstName": "MICHAEL A",
+    "JobTitles": "PARAMEDIC I/C",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 20,
+    "HourlyRate": 1768.0,
+    "SecondName": "ACKLIN",
+    "FirstName": "QIANA D",
+    "JobTitles": "CROSSING GUARD",
+    "Department": "OEMC",
+    "JobStatus": "PartTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 475.0,
+    "SecondName": "ACOSTA",
+    "FirstName": "CESAR I",
+    "JobTitles": "STEAMFITTER",
+    "Department": "WATER MGMNT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 72510.0,
+    "SecondName": "ACOSTA",
+    "FirstName": "JAIME A",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93354.0,
+    "SecondName": "ACOSTA",
+    "FirstName": "JESSE A",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 461.0,
+    "SecondName": "ACOSTA",
+    "FirstName": "JORGE",
+    "JobTitles": "ELECTRICAL MECHANIC (AUTOMOTIVE)",
+    "Department": "GENERAL SERVICES",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 50676.0,
+    "SecondName": "ACOSTA",
+    "FirstName": "MARIA DE LOS ANGELES",
+    "JobTitles": "FREEDOM OF INFORMATION ACT OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 87006.0,
+    "SecondName": "ACOSTA",
+    "FirstName": "MARIO A",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 72510.0,
+    "SecondName": "ACOSTA",
+    "FirstName": "MARK",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 69492.0,
+    "SecondName": "ACOSTA",
+    "FirstName": "MARTHA A",
+    "JobTitles": "LIBRARY ASSOCIATE",
+    "Department": "PUBLIC LIBRARY",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "ACOSTA",
+    "FirstName": "MICHELE D",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 72510.0,
+    "SecondName": "ACOSTA",
+    "FirstName": "NATALIE",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 3621.0,
+    "SecondName": "ACOSTA",
+    "FirstName": "PABLO S",
+    "JobTitles": "SANITATION LABORER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 61464.0,
+    "SecondName": "ACOSTA",
+    "FirstName": "ROSA M",
+    "JobTitles": "PARKING ENFORCEMENT AIDE",
+    "Department": "AVIATION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 402.0,
+    "SecondName": "ACRES",
+    "FirstName": "ANTHONY E",
+    "JobTitles": "LABORER",
+    "Department": "GENERAL SERVICES",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "ACSVECS",
+    "FirstName": "ZAIREH",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 94524.0,
+    "SecondName": "ADAIR",
+    "FirstName": "KENNETH R",
+    "JobTitles": "POLICE OFFICER (ASGND AS MARINE OFFICER)",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 3621.0,
+    "SecondName": "ADAIR",
+    "FirstName": "STEVEN",
+    "JobTitles": "SANITATION LABORER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 3225.0,
+    "SecondName": "ADAMCZYK JR",
+    "FirstName": "JAN",
+    "JobTitles": "BOOTER - PARKING",
+    "Department": "FINANCE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93666.0,
+    "SecondName": "ADAMCZYK",
+    "FirstName": "LAWRENCE M",
+    "JobTitles": "FIREFIGHTER",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 48078.0,
+    "SecondName": "ADAME",
+    "FirstName": "CHRISTIAN",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 4635.0,
+    "SecondName": "ADAME",
+    "FirstName": "JORGE A",
+    "JobTitles": "MACHINIST (AUTOMOTIVE)",
+    "Department": "GENERAL SERVICES",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 212.0,
+    "SecondName": "ADAME",
+    "FirstName": "PEDRO",
+    "JobTitles": "CUSTODIAL WORKER",
+    "Department": "AVIATION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "ADAMIAK",
+    "FirstName": "SIMON P",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 100980.0,
+    "SecondName": "ADAMIK",
+    "FirstName": "JEFFREY S",
+    "JobTitles": "POLICE OFFICER (ASSIGNED AS DETECTIVE)",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 91272.0,
+    "SecondName": "ADAMIK",
+    "FirstName": "MATTHEW W",
+    "JobTitles": "FIREFIGHTER/PARAMEDIC",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 356.0,
+    "SecondName": "ADAM",
+    "FirstName": "MICHAEL A",
+    "JobTitles": "MOTOR TRUCK DRIVER",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 89148.0,
+    "SecondName": "ADAMOW",
+    "FirstName": "JEFFREY W",
+    "JobTitles": "FIREFIGHTER-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 20,
+    "HourlyRate": 265.0,
+    "SecondName": "ADAMS",
+    "FirstName": "CHRISTINA",
+    "JobTitles": "SENIOR COMPANION",
+    "Department": "FAMILY & SUPPORT",
+    "JobStatus": "PartTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 96060.0,
+    "SecondName": "ADAMS",
+    "FirstName": "CRAIG W",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 85008.0,
+    "SecondName": "ADAMS",
+    "FirstName": "DAVID E",
+    "JobTitles": "SPECIAL EVENTS COORD III",
+    "Department": "CULTURAL AFFAIRS",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 65448.0,
+    "SecondName": "ADAMS",
+    "FirstName": "DEANIE M",
+    "JobTitles": "LIBRARIAN II",
+    "Department": "PUBLIC LIBRARY",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 70512.0,
+    "SecondName": "ADAMS",
+    "FirstName": "DELRICE",
+    "JobTitles": "PUBLIC HEALTH ADMINISTRATOR III",
+    "Department": "HEALTH",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 100776.0,
+    "SecondName": "ADAMS",
+    "FirstName": "DENIS H",
+    "JobTitles": "CLINICAL THERAPIST III",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 87006.0,
+    "SecondName": "ADAMS",
+    "FirstName": "DWAYNE D",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 402.0,
+    "SecondName": "ADAMS",
+    "FirstName": "ERWIN",
+    "JobTitles": "ASPHALT LABORER",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 53076.0,
+    "SecondName": "ADAMS",
+    "FirstName": "EULA M",
+    "JobTitles": "DATA ENTRY OPERATOR",
+    "Department": "WATER MGMNT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 40392.0,
+    "SecondName": "ADAMS",
+    "FirstName": "FREDERICK L",
+    "JobTitles": "POLICE ADMINISTRATIVE CLERK",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 104628.0,
+    "SecondName": "AUGLE",
+    "FirstName": "LEO R",
+    "JobTitles": "SERGEANT",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 3621.0,
+    "SecondName": "ADAMS",
+    "FirstName": "GARY W",
+    "JobTitles": "SANITATION LABORER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 64392.0,
+    "SecondName": "ADAMS",
+    "FirstName": "GREGORY M",
+    "JobTitles": "AVIATION SECURITY OFFICER",
+    "Department": "AVIATION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 80568.0,
+    "SecondName": "ADAMS",
+    "FirstName": "GREGORY W",
+    "JobTitles": "ADMINISTRATIVE ASST III",
+    "Department": "BUSINESS AFFAIRS",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 48078.0,
+    "SecondName": "ADAMS III",
+    "FirstName": "CRAIG W",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 68616.0,
+    "SecondName": "ADAMS",
+    "FirstName": "JAIRUS",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 10,
+    "HourlyRate": 2848.0,
+    "SecondName": "ADAMS",
+    "FirstName": "JAMES H",
+    "JobTitles": "POOL MOTOR TRUCK DRIVER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "PartTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 100980.0,
+    "SecondName": "ADAMS",
+    "FirstName": "JAMES W",
+    "JobTitles": "POLICE OFFICER (ASSIGNED AS DETECTIVE)",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93354.0,
+    "SecondName": "ADAMS JR",
+    "FirstName": "JERRY M",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 89148.0,
+    "SecondName": "ADAMS JR",
+    "FirstName": "JOHN W",
+    "JobTitles": "FIREFIGHTER-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 48078.0,
+    "SecondName": "ADAMS",
+    "FirstName": "KATELYN",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 48078.0,
+    "SecondName": "ADAMS",
+    "FirstName": "KAYLIE A",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 72510.0,
+    "SecondName": "ADAMSKI",
+    "FirstName": "JERRY J",
+    "JobTitles": "FIREFIGHTER-EMT (RECRUIT)",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "ADAMSKI",
+    "FirstName": "ROBERT",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 2077.0,
+    "SecondName": "ADAMS",
+    "FirstName": "KRYSTA",
+    "JobTitles": "GENERAL LABORER - DSS",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 66948.0,
+    "SecondName": "ADAMS",
+    "FirstName": "LEAH",
+    "JobTitles": "ACCOUNTING TECHNICIAN II",
+    "Department": "COMMUNITY DEVELOPMENT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 20,
+    "HourlyRate": 1315.0,
+    "SecondName": "ADAMS",
+    "FirstName": "MARJORIE E",
+    "JobTitles": "LIBRARY PAGE",
+    "Department": "PUBLIC LIBRARY",
+    "JobStatus": "PartTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 76266.0,
+    "SecondName": "ADAMS",
+    "FirstName": "MATTHEW",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 2198.0,
+    "SecondName": "ADAMS",
+    "FirstName": "MICHAEL J",
+    "JobTitles": "WATCHMAN",
+    "Department": "GENERAL SERVICES",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 50676.0,
+    "SecondName": "ADAMS",
+    "FirstName": "MICHELLE C",
+    "JobTitles": "PROGRAM AUDITOR II",
+    "Department": "COMMUNITY DEVELOPMENT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84420.0,
+    "SecondName": "ADAMS",
+    "FirstName": "OLIVIA I",
+    "JobTitles": "LEGAL SECRETARY",
+    "Department": "LAW",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 356.0,
+    "SecondName": "ADAMS",
+    "FirstName": "QUAN R",
+    "JobTitles": "MOTOR TRUCK DRIVER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 69924.0,
+    "SecondName": "ADAMS",
+    "FirstName": "RAYMOND B",
+    "JobTitles": "SR PROCUREMENT SPECIALIST",
+    "Department": "PROCUREMENT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 117996.0,
+    "SecondName": "ADAMS",
+    "FirstName": "RAYMOND T",
+    "JobTitles": "LIEUTENANT-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 102510.0,
+    "SecondName": "ADAMS",
+    "FirstName": "REGINALD K",
+    "JobTitles": "PLUMBING INSPECTOR",
+    "Department": "BUILDINGS",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 966576.0,
+    "SecondName": "ADAMS",
+    "FirstName": "ROBERT L",
+    "JobTitles": "VENTILATION AND FURNACE INSPECTOR",
+    "Department": "BUILDINGS",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 20,
+    "HourlyRate": 1594.0,
+    "SecondName": "ADAMS",
+    "FirstName": "ROSITA",
+    "JobTitles": "CROSSING GUARD - PER CBA",
+    "Department": "OEMC",
+    "JobStatus": "PartTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "ADAMS",
+    "FirstName": "RYAN",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 2012.0,
+    "SecondName": "ADAMS",
+    "FirstName": "SHEILA",
+    "JobTitles": "GENERAL LABORER - DSS",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 100776.0,
+    "SecondName": "ADAMS",
+    "FirstName": "SHERYLL A",
+    "JobTitles": "LIBRARIAN IV",
+    "Department": "PUBLIC LIBRARY",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93300.0,
+    "SecondName": "ADAMS",
+    "FirstName": "STANLEY",
+    "JobTitles": "SUPVSR OF COMPENSATION",
+    "Department": "BUSINESS AFFAIRS",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 110064.0,
+    "SecondName": "ADAMS",
+    "FirstName": "TANERA C",
+    "JobTitles": "CIVIL ENGINEER IV",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 76932.0,
+    "SecondName": "ADAMS THOMAS",
+    "FirstName": "CHEEAREASE R",
+    "JobTitles": "PUBLIC HEALTH ADMINISTRATOR I",
+    "Department": "HEALTH",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 97440.0,
+    "SecondName": "ADAMS",
+    "FirstName": "TIMOTHY J",
+    "JobTitles": "POLICE OFFICER (ASSIGNED AS DETECTIVE)",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "ADAMS",
+    "FirstName": "VICKY M",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 63876.0,
+    "SecondName": "ADAPON",
+    "FirstName": "NENITA P",
+    "JobTitles": "ACCOUNTING TECHNICIAN I",
+    "Department": "FINANCE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 94524.0,
+    "SecondName": "ADCOCK",
+    "FirstName": "DAVID G",
+    "JobTitles": "POLICE OFFICER / FLD TRNG OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 402.0,
+    "SecondName": "ADCOCK",
+    "FirstName": "TOMMY W",
+    "JobTitles": "CONCRETE LABORER",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 356.0,
+    "SecondName": "ADDANTE",
+    "FirstName": "VINCENZO",
+    "JobTitles": "POOL MOTOR TRUCK DRIVER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 30588.0,
+    "SecondName": "ADDISON",
+    "FirstName": "LATASHA D",
+    "JobTitles": "LIBRARY CLERK",
+    "Department": "PUBLIC LIBRARY",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 69492.0,
+    "SecondName": "ADDISON",
+    "FirstName": "LEWIS",
+    "JobTitles": "LIBRARY ASSOCIATE",
+    "Department": "PUBLIC LIBRARY",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 116736.0,
+    "SecondName": "ADEBAYO",
+    "FirstName": "BENJAMIN B",
+    "JobTitles": "BUILDING/CONSTRUCTION INSPECTOR",
+    "Department": "BUILDINGS",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "ADE",
+    "FirstName": "JAMES P",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 111474.0,
+    "SecondName": "ADE",
+    "FirstName": "JAMES P",
+    "JobTitles": "SERGEANT",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 77484.0,
+    "SecondName": "ADEKA",
+    "FirstName": "IBILOLA I",
+    "JobTitles": "SUPERVISING DISEASE CONTROL INVESTIGATOR - EXCL",
+    "Department": "HEALTH",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "ADELAKUN",
+    "FirstName": "NIKTE E",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 122592.0,
+    "SecondName": "ADELIZZI",
+    "FirstName": "JOY A",
+    "JobTitles": "DEPUTY COMMISSIONER",
+    "Department": "BUSINESS AFFAIRS",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 19968.0,
+    "SecondName": "ADELMAN",
+    "FirstName": "BRUCE E",
+    "JobTitles": "LEGISLATIVE AIDE",
+    "Department": "CITY COUNCIL",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 50676.0,
+    "SecondName": "ADEN",
+    "FirstName": "HIBO",
+    "JobTitles": "FREEDOM OF INFORMATION ACT OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 100776.0,
+    "SecondName": "ADENI",
+    "FirstName": "MOHAMED K",
+    "JobTitles": "ACCOUNTANT IV",
+    "Department": "FINANCE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 110064.0,
+    "SecondName": "ADESANYA",
+    "FirstName": "EMMANUEL S",
+    "JobTitles": "ENVIRONMENTAL ENGINEER III",
+    "Department": "HEALTH",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 402.0,
+    "SecondName": "ADEWOLE",
+    "FirstName": "KAREEM A",
+    "JobTitles": "CONSTRUCTION LABORER",
+    "Department": "WATER MGMNT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 20,
+    "HourlyRate": 1986.0,
+    "SecondName": "ADEWOLE",
+    "FirstName": "SAHEED",
+    "JobTitles": "TRAFFIC CONTROL AIDE-HOURLY",
+    "Department": "OEMC",
+    "JobStatus": "PartTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 100776.0,
+    "SecondName": "ADEYEMO",
+    "FirstName": "HORATIO A",
+    "JobTitles": "CIVIL ENGINEER III",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 20,
+    "HourlyRate": 1249.0,
+    "SecondName": "ADEYEMO",
+    "FirstName": "LATIFA",
+    "JobTitles": "LIBRARY PAGE",
+    "Department": "PUBLIC LIBRARY",
+    "JobStatus": "PartTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 73440.0,
+    "SecondName": "ADEYEMO",
+    "FirstName": "MOJIROLA M",
+    "JobTitles": "PUBLIC HEALTH ADMINISTRATOR I",
+    "Department": "HEALTH",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 62940.0,
+    "SecondName": "ADKINS",
+    "FirstName": "BRITTANY L",
+    "JobTitles": "ASST CORPORATION COUNSEL I",
+    "Department": "LAW",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 81156.0,
+    "SecondName": "ADKINS",
+    "FirstName": "KERRI M",
+    "JobTitles": "POLICE COMMUNICATIONS OPERATOR I",
+    "Department": "OEMC",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 96060.0,
+    "SecondName": "ADKINS",
+    "FirstName": "MARC D",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 95712.0,
+    "SecondName": "ADKINS",
+    "FirstName": "WILLIAM J",
+    "JobTitles": "FIRE COMMUNICATIONS OPERATOR II",
+    "Department": "OEMC",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 49704.0,
+    "SecondName": "ADLER",
+    "FirstName": "LAURA R",
+    "JobTitles": "LIBRARIAN I",
+    "Department": "PUBLIC LIBRARY",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 91338.0,
+    "SecondName": "ADLER",
+    "FirstName": "TRACY L",
+    "JobTitles": "POLICE OFFICER (ASSIGNED AS EVIDENCE TECHNICIAN)",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 73440.0,
+    "SecondName": "ADOLFIE",
+    "FirstName": "ELIZABETH U",
+    "JobTitles": "ADMINISTRATIVE ASST III",
+    "Department": "BUSINESS AFFAIRS",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 96060.0,
+    "SecondName": "ADOLFIE JR",
+    "FirstName": "WALTER S",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 103350.0,
+    "SecondName": "ADREANI",
+    "FirstName": "JOHN J",
+    "JobTitles": "FIRE ENGINEER-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 111474.0,
+    "SecondName": "ADRIAN",
+    "FirstName": "CHERI A",
+    "JobTitles": "SERGEANT",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 122280.0,
+    "SecondName": "ADRIAN",
+    "FirstName": "JOHN P",
+    "JobTitles": "ASST CHIEF AIRPORT OPERATIONS SUPVSR",
+    "Department": "AVIATION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93354.0,
+    "SecondName": "AFFANEH",
+    "FirstName": "MAHIR A",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 125316.0,
+    "SecondName": "AGAR",
+    "FirstName": "BULENT B",
+    "JobTitles": "CHIEF ENGINEER OF SEWERS",
+    "Department": "WATER MGMNT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 87006.0,
+    "SecondName": "AGEE",
+    "FirstName": "LAWRENCE",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 96060.0,
+    "SecondName": "AGIN",
+    "FirstName": "LAURA J",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 356.0,
+    "SecondName": "AGNEW",
+    "FirstName": "ANTONIO E",
+    "JobTitles": "POOL MOTOR TRUCK DRIVER",
+    "Department": "AVIATION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 103932.0,
+    "SecondName": "AGOSTA",
+    "FirstName": "JOSEPH J",
+    "JobTitles": "POLICE OFFICER (ASSIGNED AS DETECTIVE)",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 100980.0,
+    "SecondName": "AGOSTINELLI",
+    "FirstName": "MICHAEL A",
+    "JobTitles": "FIREFIGHTER (PER ARBITRATORS AWARD)",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 94524.0,
+    "SecondName": "AGOSTO",
+    "FirstName": "HECTOR I",
+    "JobTitles": "POLICE OFFICER/EXPLSV DETECT K9 HNDLR",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 60972.0,
+    "SecondName": "AGREDANO",
+    "FirstName": "MARIO",
+    "JobTitles": "BRIDGE OPERATOR",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 111474.0,
+    "SecondName": "AGRON",
+    "FirstName": "EDUARDO",
+    "JobTitles": "SERGEANT",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 87006.0,
+    "SecondName": "AGRON",
+    "FirstName": "EDWIN",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 3621.0,
+    "SecondName": "AGSALUD",
+    "FirstName": "FERNAN S",
+    "JobTitles": "SANITATION LABORER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 3621.0,
+    "SecondName": "AGSALUD JR",
+    "FirstName": "JUANITO S",
+    "JobTitles": "SANITATION LABORER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "AGUADA",
+    "FirstName": "GILBERT GLENN",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "AGUAS",
+    "FirstName": "ALEX",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84870.0,
+    "SecondName": "AGUAYO",
+    "FirstName": "BRAULIO",
+    "JobTitles": "FIREFIGHTER-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 92274.0,
+    "SecondName": "AGUAYO",
+    "FirstName": "LUIS A",
+    "JobTitles": "FIREFIGHTER-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 120312.0,
+    "SecondName": "AGUIAR",
+    "FirstName": "WILLIAM M",
+    "JobTitles": "DEPUTY COMMISSIONER",
+    "Department": "COMMUNITY DEVELOPMENT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 356.0,
+    "SecondName": "AGUILA",
+    "FirstName": "JUANITA",
+    "JobTitles": "MOTOR TRUCK DRIVER",
+    "Department": "AVIATION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 3621.0,
+    "SecondName": "AGUILAR",
+    "FirstName": "EFRAIN",
+    "JobTitles": "SANITATION LABORER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 70092.0,
+    "SecondName": "AGUILAR",
+    "FirstName": "ELMA M",
+    "JobTitles": "ANIMAL CARE AIDE I",
+    "Department": "ANIMAL CONTRL",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93300.0,
+    "SecondName": "AGUILAR",
+    "FirstName": "ESTHER",
+    "JobTitles": "COORD OF SPECIAL PROJECTS",
+    "Department": "HEALTH",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 356.0,
+    "SecondName": "AGUILAR",
+    "FirstName": "EVARISTO P",
+    "JobTitles": "POOL MOTOR TRUCK DRIVER",
+    "Department": "AVIATION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 70056.0,
+    "SecondName": "AGUILAR",
+    "FirstName": "IRENE",
+    "JobTitles": "SANITATION CLERK",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 91080.0,
+    "SecondName": "AGUILAR",
+    "FirstName": "JESUS D",
+    "JobTitles": "PARAMEDIC I/C",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 10,
+    "HourlyRate": 3204.0,
+    "SecondName": "AGUILAR JR",
+    "FirstName": "ROBERT",
+    "JobTitles": "POOL MOTOR TRUCK DRIVER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "PartTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 66948.0,
+    "SecondName": "AGUILAR",
+    "FirstName": "JUANITA M",
+    "JobTitles": "EDITORIAL ASST",
+    "Department": "CITY CLERK",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 104628.0,
+    "SecondName": "AGUILAR",
+    "FirstName": "KARINA D",
+    "JobTitles": "SERGEANT",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 53028.0,
+    "SecondName": "AGUILAR",
+    "FirstName": "LOUIS",
+    "JobTitles": "SENIOR CLERK-ELECTIONS",
+    "Department": "BOARD OF ELECTION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "AGUILAR",
+    "FirstName": "LUIS",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 48078.0,
+    "SecondName": "AGUILAR",
+    "FirstName": "RANDY J",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 87006.0,
+    "SecondName": "AGUILAR",
+    "FirstName": "RAY R",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 70644.0,
+    "SecondName": "AGUILAR",
+    "FirstName": "RICARDO L",
+    "JobTitles": "ANIMAL CONTROL OFFICER",
+    "Department": "ANIMAL CONTRL",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 76266.0,
+    "SecondName": "AGUILERA",
+    "FirstName": "HORACIO",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 3621.0,
+    "SecondName": "AGUILERA",
+    "FirstName": "JESUS",
+    "JobTitles": "SANITATION LABORER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 101712.0,
+    "SecondName": "AGUILERA",
+    "FirstName": "JUAN A",
+    "JobTitles": "STREET LIGHT REPAIR WORKER",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "AGUILERA",
+    "FirstName": "LINDA M",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 80016.0,
+    "SecondName": "AGUILERA",
+    "FirstName": "MARIA C",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 88296.0,
+    "SecondName": "AGUILERA",
+    "FirstName": "SAUL",
+    "JobTitles": "POLICE OFFICER / FLD TRNG OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 356.0,
+    "SecondName": "AGUILERA",
+    "FirstName": "TONY",
+    "JobTitles": "MOTOR TRUCK DRIVER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 96060.0,
+    "SecondName": "AGUINAGA",
+    "FirstName": "JOHN P",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 87006.0,
+    "SecondName": "AGUINAGA",
+    "FirstName": "MEGAN E",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 3621.0,
+    "SecondName": "AGUIRRE",
+    "FirstName": "ALEX",
+    "JobTitles": "SANITATION LABORER",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "AGUIRRE",
+    "FirstName": "ANTHONY J",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "AGUIRRE",
+    "FirstName": "ENRIQUE",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 106452.0,
+    "SecondName": "AGUIRRE",
+    "FirstName": "GUADALUPE",
+    "JobTitles": "ADMINISTRATIVE SERVICES OFFICER II",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "AGUIRRE",
+    "FirstName": "GUADALUPE G",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 103932.0,
+    "SecondName": "AGUIRRE",
+    "FirstName": "JOSEPH R",
+    "JobTitles": "POLICE OFFICER (ASSIGNED AS DETECTIVE)",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 100980.0,
+    "SecondName": "AGUIRRE",
+    "FirstName": "JUAN M",
+    "JobTitles": "POLICE OFFICER (ASSIGNED AS EVIDENCE TECHNICIAN)",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 356.0,
+    "SecondName": "AGUIRRE",
+    "FirstName": "JULIAN J",
+    "JobTitles": "POOL MOTOR TRUCK DRIVER",
+    "Department": "AVIATION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 91338.0,
+    "SecondName": "AGUIRRE",
+    "FirstName": "PABLO",
+    "JobTitles": "POLICE OFFICER / FLD TRNG OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 101442.0,
+    "SecondName": "AGUIRRE",
+    "FirstName": "RAMIRO",
+    "JobTitles": "SERGEANT",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 101712.0,
+    "SecondName": "AGUIRRE",
+    "FirstName": "ROBERT J",
+    "JobTitles": "LOAD DISPATCHER",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 96060.0,
+    "SecondName": "AGUIRRE",
+    "FirstName": "TANYA L",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 48078.0,
+    "SecondName": "AGUSTIN",
+    "FirstName": "DALEN",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 92388.0,
+    "SecondName": "AGYEKUM",
+    "FirstName": "KOFI",
+    "JobTitles": "PROGRAMMER/ANALYST",
+    "Department": "BUSINESS AFFAIRS",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 76548.0,
+    "SecondName": "AHARANWA",
+    "FirstName": "ALEXANDER E",
+    "JobTitles": "LIBRARIAN I",
+    "Department": "PUBLIC LIBRARY",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93354.0,
+    "SecondName": "AHEARN",
+    "FirstName": "DORY E",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 103350.0,
+    "SecondName": "AHERN",
+    "FirstName": "MICHAEL J",
+    "JobTitles": "FIRE ENGINEER-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93354.0,
+    "SecondName": "AHERN",
+    "FirstName": "SCOTT E",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 72510.0,
+    "SecondName": "AHERN",
+    "FirstName": "SEAN",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84870.0,
+    "SecondName": "AHLGRIM",
+    "FirstName": "MICHAEL L",
+    "JobTitles": "FIREFIGHTER-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 114324.0,
+    "SecondName": "AHLHEIM",
+    "FirstName": "MARGARET L",
+    "JobTitles": "LIEUTENANT-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 87006.0,
+    "SecondName": "AHMAD",
+    "FirstName": "FADI M",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 3457.0,
+    "SecondName": "AHMAD",
+    "FirstName": "FAROOQ",
+    "JobTitles": "LABORER",
+    "Department": "AVIATION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 48078.0,
+    "SecondName": "AHMAD",
+    "FirstName": "MOHAMMED A",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 72510.0,
+    "SecondName": "AHMAD",
+    "FirstName": "MUSA",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 124428.0,
+    "SecondName": "AHMED",
+    "FirstName": "KHALID",
+    "JobTitles": "CHIEF PROGRAMMER/ANALYST",
+    "Department": "WATER MGMNT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 58644.0,
+    "SecondName": "AHMED",
+    "FirstName": "MOHAMMAD A",
+    "JobTitles": "PARKING ENFORCEMENT AIDE",
+    "Department": "FINANCE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 72510.0,
+    "SecondName": "AHMED",
+    "FirstName": "MOHAMMED K",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 54636.0,
+    "SecondName": "AHMED",
+    "FirstName": "NAEEMA",
+    "JobTitles": "CHIEF VOUCHER EXPEDITER",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 122820.0,
+    "SecondName": "AHMED",
+    "FirstName": "NAFEES",
+    "JobTitles": "DEPUTY COMMISSIONER",
+    "Department": "AVIATION",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 88344.0,
+    "SecondName": "AHMED",
+    "FirstName": "QUAZI S",
+    "JobTitles": "CRIMINAL HISTORY ANALYST",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84516.0,
+    "SecondName": "AHMED",
+    "FirstName": "RIZWANA P",
+    "JobTitles": "SENIOR RESEARCH ANALYST",
+    "Department": "COMMUNITY DEVELOPMENT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 50628.0,
+    "SecondName": "AHMED",
+    "FirstName": "SHAHRUKH Z",
+    "JobTitles": "DATA ENTRY OPERATOR",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 63180.0,
+    "SecondName": "AHMED",
+    "FirstName": "SYED",
+    "JobTitles": "FIELD SERVICE SPECIALIST II",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93354.0,
+    "SecondName": "BEATOVIC",
+    "FirstName": "KEVIN C",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "BEATOVIC",
+    "FirstName": "MARK S",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 118020.0,
+    "SecondName": "BEATTY",
+    "FirstName": "HELEN E",
+    "JobTitles": "DEPUTY DIR",
+    "Department": "FINANCE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84516.0,
+    "SecondName": "BEATTY",
+    "FirstName": "KEISHA L",
+    "JobTitles": "ACCOUNTANT II",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 402.0,
+    "SecondName": "BEATTY",
+    "FirstName": "MICHAEL",
+    "JobTitles": "ASPHALT LABORER",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 131736.0,
+    "SecondName": "BEAUDET",
+    "FirstName": "MATTHEW W",
+    "JobTitles": "FIRST DEPUTY COMMISSIONER",
+    "Department": "BUILDINGS",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93666.0,
+    "SecondName": "BEAUDOIN",
+    "FirstName": "RICHARD L",
+    "JobTitles": "PARAMEDIC",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 117030.0,
+    "SecondName": "BEAUREGARD",
+    "FirstName": "STEVEN J",
+    "JobTitles": "LIEUTENANT-PARAMEDIC",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 20,
+    "HourlyRate": 13.0,
+    "SecondName": "BEAVER",
+    "FirstName": "JEAN",
+    "JobTitles": "HOSPITALITY WORKER",
+    "Department": "FAMILY & SUPPORT",
+    "JobStatus": "PartTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 45000.0,
+    "SecondName": "BEAVERS",
+    "FirstName": "DARCEL A",
+    "JobTitles": "ASST TO THE ALDERMAN",
+    "Department": "CITY COUNCIL",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "BEAVERS JR",
+    "FirstName": "JAMES E",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 20,
+    "HourlyRate": 265.0,
+    "SecondName": "BEAVER",
+    "FirstName": "YVONNE L",
+    "JobTitles": "FOSTER GRANDPARENT",
+    "Department": "FAMILY & SUPPORT",
+    "JobStatus": "PartTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 100980.0,
+    "SecondName": "BEAZLEY JR",
+    "FirstName": "EDMUND J",
+    "JobTitles": "POLICE OFFICER (ASSIGNED AS DETECTIVE)",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 123894.0,
+    "SecondName": "BEAZLEY",
+    "FirstName": "THOMAS P",
+    "JobTitles": "LIEUTENANT",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 48078.0,
+    "SecondName": "BEBENEK",
+    "FirstName": "DOROTA A",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 68328.0,
+    "SecondName": "BECERRA",
+    "FirstName": "ANGELINA T",
+    "JobTitles": "FIRE COMMUNICATIONS OPERATOR I",
+    "Department": "OEMC",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "BECERRA",
+    "FirstName": "ARTURO",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "BECERRIL",
+    "FirstName": "CARLOS",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93354.0,
+    "SecondName": "BECHINA",
+    "FirstName": "LORI A",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 107988.0,
+    "SecondName": "BECHINA",
+    "FirstName": "STEVEN J",
+    "JobTitles": "SERGEANT",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 72510.0,
+    "SecondName": "BECIREVIC",
+    "FirstName": "DAMIR",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 49704.0,
+    "SecondName": "BECKER",
+    "FirstName": "DANIELLE",
+    "JobTitles": "LIBRARIAN I",
+    "Department": "PUBLIC LIBRARY",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 4744.0,
+    "SecondName": "BECKER",
+    "FirstName": "GERALD P",
+    "JobTitles": "OPERATING ENGINEER-GROUP A",
+    "Department": "WATER MGMNT",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "BECKER",
+    "FirstName": "JOHN R",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 92274.0,
+    "SecondName": "BECKER JR",
+    "FirstName": "JAMES F",
+    "JobTitles": "FIREFIGHTER-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 100980.0,
+    "SecondName": "BECKER JR",
+    "FirstName": "KENNETH O",
+    "JobTitles": "POLICE OFFICER (ASSIGNED AS DETECTIVE)",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 100980.0,
+    "SecondName": "BECKER",
+    "FirstName": "LINDA J",
+    "JobTitles": "POLICE OFFICER (ASSIGNED AS DETECTIVE)",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 103350.0,
+    "SecondName": "BECKER",
+    "FirstName": "MICHAEL J",
+    "JobTitles": "FIRE ENGINEER-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 104628.0,
+    "SecondName": "BECKER",
+    "FirstName": "STEVEN R",
+    "JobTitles": "SERGEANT",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 65928.0,
+    "SecondName": "BECK",
+    "FirstName": "GREGORY",
+    "JobTitles": "ASST CORPORATION COUNSEL III",
+    "Department": "LAW",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 92556.0,
+    "SecondName": "BECK",
+    "FirstName": "KEITH",
+    "JobTitles": "REFUSE COLLECTION COORD",
+    "Department": "STREETS & SAN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 60312.0,
+    "SecondName": "BECKMAN",
+    "FirstName": "JESSICA E",
+    "JobTitles": "INVESTIGATOR-COPA",
+    "Department": "COPA",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 87006.0,
+    "SecondName": "BECKMAN",
+    "FirstName": "NICK W",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 91188.0,
+    "SecondName": "BECKNEK",
+    "FirstName": "ANTHONY",
+    "JobTitles": "SUPERVISING INVESTIGATOR-COPA",
+    "Department": "COPA",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 90024.0,
+    "SecondName": "BECK",
+    "FirstName": "RAYMOND P",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 111474.0,
+    "SecondName": "BECK",
+    "FirstName": "ROBERT",
+    "JobTitles": "SERGEANT",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 103932.0,
+    "SecondName": "BECK",
+    "FirstName": "THOMAS E",
+    "JobTitles": "POLICE OFFICER (ASSIGNED AS DETECTIVE)",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "BECK",
+    "FirstName": "TIFFANY D",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 93354.0,
+    "SecondName": "BECK",
+    "FirstName": "WILLIAM L",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 120312.0,
+    "SecondName": "BECQ GIRAUDON",
+    "FirstName": "EMILIE F",
+    "JobTitles": "CIVIL ENGINEER V",
+    "Department": "TRANSPORTN",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "BEDALOW",
+    "FirstName": "LIZZETH",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 103932.0,
+    "SecondName": "BEDFORD",
+    "FirstName": "WILLIE L",
+    "JobTitles": "FIRE ENGINEER",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 84054.0,
+    "SecondName": "BEDNARCZYK",
+    "FirstName": "ADAM",
+    "JobTitles": "POLICE OFFICER",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 92274.0,
+    "SecondName": "BEDNAREK",
+    "FirstName": "DAVID J",
+    "JobTitles": "FIREFIGHTER-EMT",
+    "Department": "FIRE",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Hourly",
+    "TypicalHours": 40,
+    "HourlyRate": 4635.0,
+    "SecondName": "BEDNAREK",
+    "FirstName": "MARK B",
+    "JobTitles": "MACHINIST (AUTOMOTIVE)",
+    "Department": "GENERAL SERVICES",
+    "JobStatus": "FullTime"
+  },
+  {
+    "PayFrequency": "Salary",
+    "AnnualSalary": 111474.0,
+    "SecondName": "BEDNAREK",
+    "FirstName": "RICHARD F",
+    "JobTitles": "SERGEANT",
+    "Department": "POLICE",
+    "JobStatus": "FullTime"
+  }
+]

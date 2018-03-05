@@ -8,24 +8,39 @@ using System.Runtime.CompilerServices;
 using System.Collections.ObjectModel;
 using System.Windows.Controls;
 using System.Collections;
+using System.Windows;
 
 namespace Staff_Tab
 {
     class StaffTabViewModel : INotifyPropertyChanged
     {
         private ObservableCollection<Employee> employees;
+        private ObservableCollection<Employee> selectedEmployees;
         private ObservableCollection<Department> departments;
         private ObservableCollection<Department> selectedDepartments;
-        
+        private bool updated = false;
+        private string lastFilePath = null;
+
         IFileService fileService;
         IDialogService dialogService;
 
         public StaffTabViewModel(IFileService fileService, IDialogService dialogService)
         {
-            Employees = new ObservableCollection<Employee>();
+            employees = new ObservableCollection<Employee>();
+            selectedDepartments = new ObservableCollection<Department>();
 
             this.dialogService = dialogService;
             this.fileService = fileService;
+        }
+
+        public bool Updated
+        {
+            get { return updated; }
+            set
+            {
+                updated = value;
+                OnPropertyChanged();
+            }
         }
 
         public ObservableCollection<Department> Departments
@@ -48,22 +63,38 @@ namespace Staff_Tab
             }
         }
 
-        public ObservableCollection<Employee> Employees
+        public ObservableCollection<Employee> SelectedEmployees
         {
-            get => employees;
+            get => selectedEmployees;
             set
             {
-                employees = value;
+                selectedEmployees = value;
                 OnPropertyChanged();
             }
         }
 
         #region Commands
 
+        private RelayCommand newCommand;
         private RelayCommand saveCommand;
+        private RelayCommand saveAsCommand;
         private RelayCommand openCommand;
-        private RelayCommand departmentsExpanded;
         private RelayCommand departmentSelectionChangedCommand;
+        private RelayCommand closingCommand;
+
+        public RelayCommand NewCommand
+        {
+            get
+            {
+                return newCommand ??
+                (newCommand = new RelayCommand(obj =>
+                {
+                    CheckUnsavedData();
+                    Reset();
+                }));
+
+            }
+        }
 
         public RelayCommand SaveCommand
         {
@@ -72,19 +103,18 @@ namespace Staff_Tab
                 return saveCommand ??
                   (saveCommand = new RelayCommand(obj =>
                   {
-                      try
-                      {
-                          if (dialogService.SaveFileDialog() == true)
-                          {
-                              fileService.Save(dialogService.FilePath, Employees);
-                              dialogService.ShowMessage("Файл сохранен");
-                          }
-                      }
-                      catch (Exception ex)
-                      {
-                          dialogService.ShowMessage(ex.Message);
-                      }
+                      if (lastFilePath is null) SaveFile();
+                      else SaveLastFile();
                   }));
+            }
+        }
+
+        public RelayCommand SaveAsCommand
+        {
+            get
+            {
+                return saveAsCommand ??
+                    (saveAsCommand = new RelayCommand(obj => SaveFile()));
             }
         }
 
@@ -99,13 +129,16 @@ namespace Staff_Tab
                       {
                           if (dialogService.OpenFileDialog() == true)
                           {
-                              Employees.Clear();
+                              employees.Clear();
                               foreach (Employee employee in fileService.Open(dialogService.FilePath))
-                                  Employees.Add(employee);
+                                  employees.Add(employee);
+                              lastFilePath = dialogService.FilePath;
+                              updated = false;
                               dialogService.ShowMessage("Файл открыт");
                           }
 
-                          Departments = new ObservableCollection<Department>(Employees.Select(x => x.Department).Distinct());
+                          SelectedEmployees = new ObservableCollection<Employee>(employees.Distinct());
+                          Departments = new ObservableCollection<Department>(employees.Select(x => x.Department).Distinct());
                       }
                       catch (Exception ex)
                       {
@@ -115,29 +148,84 @@ namespace Staff_Tab
             }
         }
 
-        public RelayCommand DepartmentsExpanded
+        public RelayCommand ClosingCommand
         {
             get
             {
-                return departmentsExpanded ??
-                  (departmentsExpanded = new RelayCommand(obj =>
+                return closingCommand ??
+                  (closingCommand = new RelayCommand(obj =>
                   {
-                      Expander expander = obj as Expander;
-
-                      foreach (Department department in Departments)
-                      {
-                          
-
-                      }
+                      CheckUnsavedData();
+                      Environment.Exit(0);
                   }));
+
             }
         }
 
-        public RelayCommand DepartmentSelectionChangedCommand => departmentSelectionChangedCommand ??
-                    (departmentSelectionChangedCommand = new RelayCommand(obj =>
-                      Employees = Employees.Where(x => x.Department == obj as Department) as ObservableCollection<Employee>));
+        public RelayCommand DepartmentSelectionChangedCommand
+        {
+            get
+            {
+                return departmentSelectionChangedCommand ??
+                            (departmentSelectionChangedCommand = new RelayCommand(obj =>
+                            {
+                                SelectedEmployees = new ObservableCollection<Employee>(employees.Join(SelectedDepartments, x => x.Department, y => y, (x, y) => x));
+                            }));
+            }
+        }
 
         #endregion
+
+        private void CheckUnsavedData()
+        {
+            if (updated)
+            {
+                MessageBoxResult result = MessageBox.Show("Сохранить изменения?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                if (result == MessageBoxResult.Yes)
+                {
+                    SaveFile();
+                }
+                //else e.Cancel = true;//Отменяем действие
+            }
+        }
+
+        private void SaveFile()
+        {
+            try
+            {
+                if (dialogService.SaveFileDialog() == true)
+                {
+                    lastFilePath = dialogService.FilePath;
+                    SaveLastFile();
+                }
+            }
+            catch (Exception ex)
+            {
+                dialogService.ShowMessage(ex.Message);
+            }
+        }
+
+        private void SaveLastFile()
+        {
+            try
+            {
+                fileService.Save(lastFilePath, employees);
+                dialogService.ShowMessage("Файл сохранен");
+                updated = false;
+            }
+            catch (Exception ex)
+            {
+                dialogService.ShowMessage(ex.Message);
+            }
+        }
+
+        private void Reset()
+        {
+            Departments.Clear();
+            employees.Clear();
+            updated = false;
+            lastFilePath = null;
+        }
 
         #region INotifyPropertyChanged implementation
 
