@@ -58,6 +58,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="View\EmployeeView.xaml.cs">
+      <DependentUpon>EmployeeView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Model\Department.cs" />
     <Compile Include="Services\DefaultDialogService.cs" />
     <Compile Include="Services\EmployeeConverter.cs" />
@@ -82,6 +85,10 @@
     <Compile Include="Services\RelayCommand.cs" />
     <Compile Include="ViewModel\EmployeeViewModel.cs" />
     <Compile Include="ViewModel\StaffTabViewModel.cs" />
+    <Page Include="View\EmployeeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\StaffTab.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
