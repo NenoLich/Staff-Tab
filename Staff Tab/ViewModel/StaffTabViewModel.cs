@@ -10,7 +10,7 @@ using System.Windows.Controls;
 using System.Collections;
 using System.Windows;
 using System.Windows.Media;
-
+using System.IO;
 
 namespace Staff_Tab
 {
@@ -95,6 +95,10 @@ namespace Staff_Tab
         private RelayCommand unSelectAllCommand;
         private RelayCommand closingCommand;
         private RelayCommand addDepartment;
+        private RelayCommand addSalaryEmployeeCommand;
+        private RelayCommand addHourlyEmployeeCommand;
+        private RelayCommand editEmployeeCommand;
+        private RelayCommand removeEmployeeCommand;
 
         public RelayCommand NewCommand
         {
@@ -151,7 +155,7 @@ namespace Staff_Tab
                               dialogService.ShowMessage("Файл открыт");
                           }
 
-                          SelectedEmployees = new ObservableCollection<Employee>(employees.Distinct());
+                          //SelectedEmployees = new ObservableCollection<Employee>(employees.Distinct());
                           Departments = new ObservableCollection<Department>(employees.Select(x => x.Department).Distinct());
                       }
                       catch (Exception ex)
@@ -241,12 +245,81 @@ namespace Staff_Tab
                 return departmentSelectionChangedCommand ??
                             (departmentSelectionChangedCommand = new RelayCommand(obj =>
                             {
-                              SelectedEmployees = new ObservableCollection<Employee>(employees.Join(SelectedDepartments, x => x.Department, y => y, (x, y) => x));
+                                UpdateSelected();
                             }));
             }
           }
 
+        public RelayCommand AddSalaryEmployeeCommand
+        {
+            get
+            {
+                return addSalaryEmployeeCommand ??
+                            (addSalaryEmployeeCommand = new RelayCommand(obj =>
+                            {
+                                Employee employee = new SalaryEmployee();
+                                TryAddEmployee(employee);
+                            }));
+            }
+        }
+
+        public RelayCommand AddHourlyEmployeeCommand
+        {
+            get
+            {
+                return addHourlyEmployeeCommand ??
+                            (addHourlyEmployeeCommand = new RelayCommand(obj =>
+                            {
+                                Employee employee = new HourlyEmployee();
+                                TryAddEmployee(employee);
+                            }));
+            }
+        }
+
+        public RelayCommand EditEmployeeCommand
+        {
+            get
+            {
+                return editEmployeeCommand ??
+                            (editEmployeeCommand = new RelayCommand(obj =>
+                            {
+                                Employee employee = obj as Employee;
+
+                                fileService.SaveBeforeEdit("Editable.json", employee);
+                                EmployeeView employeeView = new EmployeeView(employee);
+                                employeeView.ShowDialog();
+                                if (!employeeView.DialogResult.HasValue || !employeeView.DialogResult.Value)
+                                {
+                                    employee = fileService.GetAfterEdit("Editable.json");
+                                }
+                                else
+                                {
+                                    UpdateSelected();
+                                }
+                                File.Delete("Editable.json");
+                            }));
+            }
+        }
+
+        public RelayCommand RemoveEmployeeCommand
+        {
+            get
+            {
+                return removeEmployeeCommand ??
+                            (removeEmployeeCommand = new RelayCommand(obj =>
+                            {
+                                employees.Remove(obj as Employee);
+                                UpdateSelected();
+                            }));
+            }
+        }
+
         #endregion
+
+        private void UpdateSelected()
+        {
+            SelectedEmployees = new ObservableCollection<Employee>(employees.Join(SelectedDepartments, x => x.Department, y => y, (x, y) => x));
+        }
 
         /// <summary>
         /// Проверка наличия несохраненных изменений
@@ -297,6 +370,21 @@ namespace Staff_Tab
             catch (Exception ex)
             {
                 dialogService.ShowMessage(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// Попытка добавления нового сотрудника с помощью соответствующего окна
+        /// </summary>
+        /// <param name="employee"></param>
+        private void TryAddEmployee(Employee employee)
+        {
+            EmployeeView employeeView = new EmployeeView(employee);
+            employeeView.ShowDialog();
+            if (employeeView.DialogResult.HasValue && employeeView.DialogResult.Value)
+            {
+                employees.Add(employee);
+                UpdateSelected();
             }
         }
 

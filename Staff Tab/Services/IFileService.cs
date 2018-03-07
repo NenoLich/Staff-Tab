@@ -14,5 +14,8 @@ namespace Staff_Tab
     {
         ObservableCollection<Employee> Open(string filename);
         void Save(string filename, ObservableCollection<Employee> employees);
+
+        Employee GetAfterEdit(string filename);
+        void SaveBeforeEdit(string filename, Employee employee);
     }
 }

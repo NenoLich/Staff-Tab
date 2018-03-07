@@ -33,5 +33,10 @@ namespace Staff_Tab
             TypicalHours = typicalHours;
             HourlyRate = hourlyRate;
         }
+
+        public HourlyEmployee() : base()
+        {
+            PayFrequency = PayFrequency.Hourly;
+        }
     }
 }

@@ -23,5 +23,10 @@ namespace Staff_Tab
             PayFrequency = PayFrequency.Salary;
             AnnualSalary = annualSalary;
         }
+
+        public SalaryEmployee() : base()
+        {
+            PayFrequency = PayFrequency.Salary;
+        }
     }
 }

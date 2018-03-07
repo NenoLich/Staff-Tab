@@ -5,15 +5,78 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Staff_Tab"
         mc:Ignorable="d"
-        Title="Employee" Height="400" Width="200" DataContext="local:EmployeeViewModel">
+        Title="Employee" Height="400" Width="200" 
+        local:DialogCloser.DialogResult="{Binding DialogResult}">
     <Window.Resources>
-        <Style TargetType="TextBlock">
-            <Setter Property="TextAlignment" Value="Left"/>
-            <Setter Property="Margin" Value="3"/>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="CommandParameter" 
+                    Value="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Window}}}"/>
         </Style>
     </Window.Resources>
     <StackPanel>
-        <Image Source="{Binding ImageSource}" Height=""/>
-        
+        <Image Source="{Binding ImageSource}" Height="Auto"/>
+        <Grid>
+            <Grid.Resources>
+                <Style x:Key="PropertyTextBlock">
+                    <Setter Property="TextBlock.TextAlignment" Value="Left"/>
+                    <Setter Property="TextBlock.Margin" Value="3"/>
+                    <Setter Property="Grid.Column" Value="0"/>
+                </Style>
+                <Style TargetType="local:AutoValidatedTextBox">
+                    <Setter Property="TextAlignment" Value="Right"/>
+                    <Setter Property="Margin" Value="3"/>
+                    <Setter Property="Grid.Column" Value="1"/>
+                </Style>
+                <Style TargetType="ComboBox">
+                    <Setter Property="Margin" Value="3"/>
+                    <Setter Property="IsEditable" Value="True"/>
+                    <Setter Property="IsReadOnly" Value="True"/>
+                </Style>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Style="{StaticResource PropertyTextBlock}" Text="Salary or Hourly" Grid.Row="0"/>
+            <ComboBox SelectedItem="{Binding Path=PayFrequency}" Grid.Row="0">
+                <TextBlock Text="Salary"/>
+                <TextBlock Text="Hourly"/>
+            </ComboBox>
+            <TextBlock Style="{StaticResource PropertyTextBlock}" Text="Second Name" Grid.Row="1"/>
+            <local:AutoValidatedTextBox Regex="^[A-za-z]+$" Text="{Binding SecondName}" Grid.Row="1"/>
+            <TextBlock Style="{StaticResource PropertyTextBlock}" Text="First Name" Grid.Row="2"/>
+            <local:AutoValidatedTextBox Regex="^[A-za-z]+$" Text="{Binding FirstName}" Grid.Row="2"/>
+            <TextBlock Style="{StaticResource PropertyTextBlock}" Text="Job Titles" Grid.Row="3"/>
+            <local:AutoValidatedTextBox Regex="^[A-za-z]([A-za-z]+[ ]?)*$" Text="{Binding JobTitles}" Grid.Row="3"/>
+            <TextBlock Style="{StaticResource PropertyTextBlock}" Text="Department" Grid.Row="4"/>
+            <local:AutoValidatedTextBox Text="{Binding Department}" Grid.Row="4" IsReadOnly="True"/>
+            <TextBlock Style="{StaticResource PropertyTextBlock}" Text="Full or Part-Time" Grid.Row="5"/>
+            <ComboBox Text="{Binding JobStatus}" Grid.Row="5">
+                <TextBlock Text="FullTime"/>
+                <TextBlock Text="PartTime"/>
+            </ComboBox>
+            <TextBlock Style="{StaticResource PropertyTextBlock}" Text="Annual Salary" Grid.Row="6"/>
+            <local:AutoValidatedTextBox Regex="^\\d+.?\\d{0,2}$" Text="{Binding AnnualSalary}" Grid.Row="6"/>
+            <TextBlock Style="{StaticResource PropertyTextBlock}" Text="Typical Hours" Grid.Row="7"/>
+            <local:AutoValidatedTextBox Regex="^\\d+$" Text="{Binding TypicalHours}" Grid.Row="7"/>
+            <TextBlock Style="{StaticResource PropertyTextBlock}" Text="Hourly Rate" Grid.Row="8"/>
+            <local:AutoValidatedTextBox Regex="^\\d+.?\\d{0,2}$" Text="{Binding HourlyRate}" Grid.Row="8"/>
+        </Grid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+            <Button Content="Apply" Command="{Binding ApplyCommand}"/>
+            <Button Content="Abort" Command="{Binding AbortCommand}"/>
+        </StackPanel>
     </StackPanel>
 </Window>

@@ -40,7 +40,7 @@
                 <ColumnDefinition x:Name="Collumn3" Width="*"/>
             </Grid.ColumnDefinitions>
             <ScrollViewer Grid.Column="0">
-                <ListView Grid.Column="0" ItemsSource="{Binding SelectedEmployees}" VirtualizingStackPanel.IsVirtualizing="True" 
+                <ListView Grid.Column="0" x:Name="EmployeesListView" ItemsSource="{Binding SelectedEmployees}" VirtualizingStackPanel.IsVirtualizing="True" 
                           VirtualizingStackPanel.VirtualizationMode="Recycling" >
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
@@ -48,6 +48,18 @@
                             <Setter Property="VerticalContentAlignment"  Value="Stretch"/>
                         </Style>
                     </ListView.ItemContainerStyle>
+                    <ListView.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem Header="Add">
+                                <MenuItem Header="Salary Employee" Command="{Binding AddSalaryEmployeeCommand}"/>
+                                <MenuItem Header="Hourly Employee" Command="{Binding AddHourlyEmployeeCommand}"/>
+                            </MenuItem>
+                            <MenuItem Header="Edit" Command="{Binding EditEmployeeCommand}"
+                                      CommandParameter="{Binding ElementName=EmployeesListView,Path=SelectedItem}"/>
+                            <MenuItem Header="Remove" Command="{Binding RemoveEmployeeCommand}"
+                                      CommandParameter="{Binding ElementName=EmployeesListView,Path=SelectedItem}"/>
+                        </ContextMenu>
+                    </ListView.ContextMenu>
                     <ListView.View>
                         <GridView AllowsColumnReorder="true"
                                     ColumnHeaderToolTip="Employee Information">

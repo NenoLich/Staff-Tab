@@ -45,9 +45,15 @@ namespace Staff_Tab
             JobStatus = jobStatus;
         }
 
+        public Employee()
+        {
+
+        }
+
         public override bool Equals(object other)
         {
-            return SecondName == (other as Employee)?.SecondName && FirstName == (other as Employee)?.FirstName;
+            return SecondName.ToLower() == (other as Employee)?.SecondName.ToLower() && 
+                FirstName.ToLower() == (other as Employee)?.FirstName.ToLower();
         }
 
         public override int GetHashCode()

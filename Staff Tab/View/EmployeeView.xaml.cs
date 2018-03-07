@@ -19,9 +19,10 @@ namespace Staff_Tab
     /// </summary>
     public partial class EmployeeView : Window
     {
-        public EmployeeView()
+        public EmployeeView(Employee employee)
         {
             InitializeComponent();
+            DataContext = new EmployeeViewModel(employee);
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Staff_Tab
 {
@@ -140,6 +141,38 @@ namespace Staff_Tab
                 }
 
                 OnPropertyChanged();
+            }
+        }
+
+        #endregion
+
+        #region Commands
+
+        private RelayCommand applyCommand;
+        private RelayCommand abortCommand;
+        
+        public RelayCommand ApplyCommand
+        {
+            get
+            {
+                return applyCommand ??
+                (applyCommand = new RelayCommand(obj =>
+                {
+                    DialogCloser.SetDialogResult(obj as Window, true);
+                }));
+
+            }
+        }
+
+        public RelayCommand AbortCommand
+        {
+            get
+            {
+                return abortCommand ??
+                (abortCommand = new RelayCommand(obj =>
+                {
+                    DialogCloser.SetDialogResult(obj as Window, false);
+                }));
             }
         }
 
