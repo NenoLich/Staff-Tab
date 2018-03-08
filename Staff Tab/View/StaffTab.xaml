@@ -55,9 +55,9 @@
                                 <MenuItem Header="Hourly Employee" Command="{Binding AddHourlyEmployeeCommand}"/>
                             </MenuItem>
                             <MenuItem Header="Edit" Command="{Binding EditEmployeeCommand}"
-                                      CommandParameter="{Binding ElementName=EmployeesListView,Path=SelectedItem}"/>
+                                      CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=ContextMenu},Path=PlacementTarget.SelectedItem}"/>
                             <MenuItem Header="Remove" Command="{Binding RemoveEmployeeCommand}"
-                                      CommandParameter="{Binding ElementName=EmployeesListView,Path=SelectedItem}"/>
+                                      CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=ContextMenu},Path=PlacementTarget.SelectedItem}"/>
                         </ContextMenu>
                     </ListView.ContextMenu>
                     <ListView.View>

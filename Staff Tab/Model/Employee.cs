@@ -16,7 +16,7 @@ namespace Staff_Tab
     public abstract class Employee
     {
         [JsonIgnore]
-        protected static ObservableCollection<Department> departments = new ObservableCollection<Department>();
+        public static ObservableCollection<Department> departments = new ObservableCollection<Department>();
 
         public PayFrequency PayFrequency { get; set; }
         public string SecondName { get; set; }
@@ -38,27 +38,38 @@ namespace Staff_Tab
             FirstName = firstName;
             JobTitles = jobTitles;
 
-            Department department = departments.FirstOrDefault(x => x.Title == departmentName);
-            Department = department is null ? new Department(departmentName) : department;
-            department?.Hire(this);
+            Department = GetDepartment(departmentName);
+            Department?.Hire(this);
 
             JobStatus = jobStatus;
         }
 
         public Employee()
         {
+        }
 
+        public Department GetDepartment(string departmentName)
+        {
+            Department department = departments.FirstOrDefault(x => x.Title == departmentName);
+
+            if (department is null)
+            {
+                department = new Department(departmentName);
+                departments.Add(department);
+            }
+
+            return department;
         }
 
         public override bool Equals(object other)
         {
-            return SecondName.ToLower() == (other as Employee)?.SecondName.ToLower() && 
-                FirstName.ToLower() == (other as Employee)?.FirstName.ToLower();
+            return SecondName?.ToLower() == (other as Employee)?.SecondName?.ToLower() && 
+                FirstName?.ToLower() == (other as Employee)?.FirstName?.ToLower();
         }
 
         public override int GetHashCode()
         {
-            return SecondName.GetHashCode();
+            return SecondName is null ? new Random().GetHashCode() : SecondName.GetHashCode();
         }
     }
 }

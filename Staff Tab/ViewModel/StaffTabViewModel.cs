@@ -21,7 +21,6 @@ namespace Staff_Tab
     {
         private ObservableCollection<Employee> employees;
         private ObservableCollection<Employee> selectedEmployees;
-        private ObservableCollection<Department> departments;
         private ObservableCollection<Department> selectedDepartments;
         private bool updated = false;
         private string lastFilePath = null;
@@ -50,10 +49,10 @@ namespace Staff_Tab
 
         public ObservableCollection<Department> Departments
         {
-            get => departments;
+            get => Employee.departments;
             set
             {
-                departments = value;
+                Employee.departments = value;
                 OnPropertyChanged();
             }
         }
@@ -155,8 +154,7 @@ namespace Staff_Tab
                               dialogService.ShowMessage("Файл открыт");
                           }
 
-                          //SelectedEmployees = new ObservableCollection<Employee>(employees.Distinct());
-                          Departments = new ObservableCollection<Department>(employees.Select(x => x.Department).Distinct());
+                          Departments = new ObservableCollection<Department>(Employee.departments.Distinct());
                       }
                       catch (Exception ex)
                       {
@@ -229,7 +227,7 @@ namespace Staff_Tab
                     (addDepartment = new RelayCommand(obj =>
                     {
                         TextBox textBox = obj as TextBox;
-                        Departments?.Add(new Department(textBox.Text));
+                        Department.Create(textBox.Text);
                         textBox.Text = string.Empty;
                     }));
             }
@@ -283,18 +281,23 @@ namespace Staff_Tab
                 return editEmployeeCommand ??
                             (editEmployeeCommand = new RelayCommand(obj =>
                             {
+                                if (obj is null)
+                                {
+                                    return;
+                                }
                                 Employee employee = obj as Employee;
 
                                 fileService.SaveBeforeEdit("Editable.json", employee);
                                 EmployeeView employeeView = new EmployeeView(employee);
                                 employeeView.ShowDialog();
-                                if (!employeeView.DialogResult.HasValue || !employeeView.DialogResult.Value)
+                                if (employeeView.DialogResult.HasValue && employeeView.DialogResult.Value)
                                 {
-                                    employee = fileService.GetAfterEdit("Editable.json");
+                                    Updated = true;
+                                    UpdateSelected();
                                 }
                                 else
                                 {
-                                    UpdateSelected();
+                                    employee = fileService.GetAfterEdit("Editable.json");
                                 }
                                 File.Delete("Editable.json");
                             }));
@@ -308,7 +311,13 @@ namespace Staff_Tab
                 return removeEmployeeCommand ??
                             (removeEmployeeCommand = new RelayCommand(obj =>
                             {
+                                if (obj is null)
+                                {
+                                    return;
+                                }
                                 employees.Remove(obj as Employee);
+
+                                Updated = true;
                                 UpdateSelected();
                             }));
             }
@@ -384,6 +393,7 @@ namespace Staff_Tab
             if (employeeView.DialogResult.HasValue && employeeView.DialogResult.Value)
             {
                 employees.Add(employee);
+                Updated = true;
                 UpdateSelected();
             }
         }

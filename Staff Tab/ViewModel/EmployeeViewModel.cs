@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
@@ -34,6 +35,16 @@ namespace Staff_Tab
         }
         #region Properties
 
+        public ObservableCollection<Department> Departments
+        {
+            get => Employee.departments;
+            set
+            {
+                Employee.departments = value;
+                OnPropertyChanged();
+            }
+        }
+
         public PayFrequency PayFrequency
         {
             get { return employee.PayFrequency; }
@@ -64,6 +75,16 @@ namespace Staff_Tab
             }
         }
 
+        public Department Department
+        {
+            get { return employee.Department; }
+            set
+            {
+                employee.Department = value;
+                OnPropertyChanged();
+            }
+        }
+
         public Uri ImageSource
         {
             get { return employee.ImageSource ?? new Uri("pack://application:,,,/Data/DefaultEmployee.jpg"); }
@@ -82,11 +103,6 @@ namespace Staff_Tab
                 employee.JobTitles = value;
                 OnPropertyChanged();
             }
-        }
-
-        public string Department
-        {
-            get { return employee.Department.Title; }
         }
 
         public JobStatus JobStatus
@@ -150,7 +166,8 @@ namespace Staff_Tab
 
         private RelayCommand applyCommand;
         private RelayCommand abortCommand;
-        
+        private RelayCommand departmentSelectionChangedCommand;
+
         public RelayCommand ApplyCommand
         {
             get
@@ -173,6 +190,21 @@ namespace Staff_Tab
                 {
                     DialogCloser.SetDialogResult(obj as Window, false);
                 }));
+            }
+        }
+
+        public RelayCommand DepartmentSelectionChangedCommand
+        {
+            get
+            {
+                return departmentSelectionChangedCommand ??
+                            (departmentSelectionChangedCommand = new RelayCommand(obj =>
+                            {
+                                Department?.Fire(employee);
+                                Department = employee.GetDepartment((obj as Department).Title);
+                                Department.Hire(employee);
+                            }
+                            ,obj => obj != null));
             }
         }
 

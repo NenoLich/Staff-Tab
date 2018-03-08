@@ -21,17 +21,37 @@ namespace Staff_Tab
             get=> regex.ToString();
             set
             {
-                regex = new Regex(value);
+                regex = new Regex(@""+value);
             }
         }
 
         protected override void OnPreviewTextInput(TextCompositionEventArgs e)
         {
-            if (regex != null || !regex.IsMatch(e.Text))
+            if (regex != null && !regex.IsMatch(Text+e.Text))
             {
                 e.Handled = true;
             }
             base.OnPreviewTextInput(e);
+        }
+
+        protected override void OnPreviewKeyDown(KeyEventArgs e)
+        {
+            switch (e.Key)
+            {
+                case Key.Space:
+                    e.Handled=IsMatch(Text + " ");
+                    break;
+                case Key.Decimal:
+                    e.Handled = IsMatch(Text + ".");
+                    break;
+            }
+
+            base.OnPreviewKeyDown(e);
+        }
+
+        private bool IsMatch(string text)
+        {
+            return regex != null && !regex.IsMatch(text);
         }
     }
 }

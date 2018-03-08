@@ -23,6 +23,14 @@ namespace Staff_Tab
             Title = name;
         }
 
+        public static void Create(string name)
+        {
+            if (!Employee.departments.Any(x=>x.Title == name))
+            {
+                Employee.departments.Add(new Department(name));
+            }
+        }
+
         /// <summary>
         /// Зачисление в штат
         /// </summary>
@@ -31,6 +39,12 @@ namespace Staff_Tab
         {
             employees.Add(employee);
             employee.Department = this;
+        }
+
+        public void Fire(Employee employee)
+        {
+            employees.Remove(employee);
+            employee.Department = null;
         }
 
         public override bool Equals(object other)
