@@ -11,6 +11,7 @@ using System.Collections;
 using System.Windows;
 using System.Windows.Media;
 using System.IO;
+using Staff_Tab.Services.DataVirtualization;
 
 namespace Staff_Tab
 {
@@ -19,8 +20,9 @@ namespace Staff_Tab
     /// </summary>
     class StaffTabViewModel : INotifyPropertyChanged
     {
-        private ObservableCollection<Employee> employees;
-        private ObservableCollection<Employee> selectedEmployees;
+        private EmployeeListLoader loader;
+        private List<Employee> employees;
+        private VirtualList<Employee> selectedEmployees;
         private ObservableCollection<Department> selectedDepartments;
         private bool updated = false;
         private string lastFilePath = null;
@@ -30,8 +32,10 @@ namespace Staff_Tab
 
         public StaffTabViewModel(IFileService fileService, IDialogService dialogService)
         {
-            employees = new ObservableCollection<Employee>();
+            employees = new List<Employee>();
             selectedDepartments = new ObservableCollection<Department>();
+            loader = new EmployeeListLoader(employees);
+            SelectedEmployees = new VirtualList<Employee>(loader);
 
             this.dialogService = dialogService;
             this.fileService = fileService;
@@ -73,7 +77,7 @@ namespace Staff_Tab
         /// <summary>
         /// Сотрудники, используемые для отображения
         /// </summary>
-        public ObservableCollection<Employee> SelectedEmployees
+        public VirtualList<Employee> SelectedEmployees
         {
             get => selectedEmployees;
             set
@@ -191,7 +195,7 @@ namespace Staff_Tab
                           ListBox listBox = obj as ListBox;
                           listBox.SelectAll();
                       },
-                      obj=>obj is ListBox));
+                      obj => obj is ListBox));
             }
         }
 
@@ -246,7 +250,7 @@ namespace Staff_Tab
                                 UpdateSelected();
                             }));
             }
-          }
+        }
 
         public RelayCommand AddSalaryEmployeeCommand
         {
@@ -285,7 +289,7 @@ namespace Staff_Tab
                                 {
                                     return;
                                 }
-                                Employee employee = obj as Employee;
+                                Employee employee = SelectedEmployees[Convert.ToInt32(obj)].Data;
 
                                 fileService.SaveBeforeEdit("Editable.json", employee);
                                 EmployeeView employeeView = new EmployeeView(employee);
@@ -315,7 +319,7 @@ namespace Staff_Tab
                                 {
                                     return;
                                 }
-                                employees.Remove(obj as Employee);
+                                employees.Remove(SelectedEmployees[Convert.ToInt32(obj)].Data);
 
                                 Updated = true;
                                 UpdateSelected();
@@ -327,7 +331,9 @@ namespace Staff_Tab
 
         private void UpdateSelected()
         {
-            SelectedEmployees = new ObservableCollection<Employee>(employees.Join(SelectedDepartments, x => x.Department, y => y, (x, y) => x));
+            loader.Source = employees.Join(SelectedDepartments, x => x.Department, y => y, (x, y) => x).ToList();
+
+            SelectedEmployees.Load(0);
         }
 
         /// <summary>
@@ -448,5 +454,6 @@ namespace Staff_Tab
         }
 
         #endregion
+        
     }
 }

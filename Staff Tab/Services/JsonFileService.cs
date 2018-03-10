@@ -20,13 +20,13 @@ namespace Staff_Tab
                 new EmployeeConverter());
         }
 
-        public ObservableCollection<Employee> Open(string filename)
+        public List<Employee> Open(string filename)
         {
-            return JsonConvert.DeserializeObject< ObservableCollection < Employee >> (File.ReadAllText(filename), 
+            return JsonConvert.DeserializeObject< List < Employee >> (File.ReadAllText(filename), 
                 new EmployeeConverter());
         }
 
-        public void Save(string filename, ObservableCollection<Employee> employees)
+        public void Save(string filename, List<Employee> employees)
         {
             File.WriteAllText(filename, JsonConvert.SerializeObject(employees, Formatting.Indented, new EmployeeConverter()));
         }

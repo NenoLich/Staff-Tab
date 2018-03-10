@@ -58,8 +58,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Services\DataVirtualization\AdornerManager.cs" />
+    <Compile Include="Services\DataVirtualization\GridViewSort.cs" />
+    <Compile Include="Services\DataVirtualization\IVirtualList.cs" />
+    <Compile Include="Services\DataVirtualization\IVirtualListLoader.cs" />
+    <Compile Include="Services\DataVirtualization\QueuedBackgroundWorkerState.cs" />
+    <Compile Include="Services\DataVirtualization\SortOrder.cs" />
+    <Compile Include="Services\DataVirtualization\VirtualList.cs" />
+    <Compile Include="Services\DataVirtualization\VirtualListItem.cs" />
+    <Compile Include="Services\DataVirtualization\VirtualListItemBase.cs" />
+    <Compile Include="Services\DataVirtualization\VirtualListLoadingIndicator.cs" />
     <Compile Include="Services\DialogCloser.cs" />
     <Compile Include="Services\AutoValidatedTextBox.cs" />
+    <Compile Include="Services\EmployeeListLoader.cs" />
     <Compile Include="View\EmployeeView.xaml.cs">
       <DependentUpon>EmployeeView.xaml</DependentUpon>
     </Compile>
@@ -119,6 +130,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Services\DataVirtualization\AdornerManager.DecoratorAdorner.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

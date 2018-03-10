@@ -4,9 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Staff_Tab"
+        xmlns:dv="clr-namespace:Staff_Tab.Services.DataVirtualization"
         xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
         mc:Ignorable="d"
-        Title="Staff Tab" Height="500" Width="700">
+        Title="Staff Tab" Height="500" Width="700" MaxHeight="500" >
     <Window.Resources>
         <DataTemplate x:Key="DepartmentCheckBox" x:Shared="false">
             <CheckBox Content="{Binding Path=Title}"
@@ -14,6 +15,34 @@
                   IsChecked="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
                   AncestorType={x:Type ListBoxItem}}, Path=IsSelected}" >
             </CheckBox>
+        </DataTemplate>
+        <Style TargetType="ListViewItem">
+            <Setter Property="dv:VirtualListItemBase.AutoLoad" Value="true" />
+        </Style>
+        <!-- Отображение треугольника при сортировки колонки ListView -->
+        <DataTemplate x:Key="ListViewColumnHeaderTemplate">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <ContentPresenter ContentTemplate="{x:Null}" />
+                <Path x:Name="Path" Grid.Column="1" Fill="Black" Margin="4,0,2,0" VerticalAlignment="Center" />
+            </Grid>
+            <DataTemplate.Triggers>
+                <DataTrigger Binding="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type GridViewColumnHeader}, AncestorLevel=1}, Path=(dv:GridViewSort.SortOrder)}" Value="None">
+                    <Setter TargetName="Path" Property="Visibility" Value="Collapsed" />
+                </DataTrigger>
+                <DataTrigger Binding="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type GridViewColumnHeader}, AncestorLevel=1}, Path=(dv:GridViewSort.SortOrder)}" Value="Ascending">
+                    <Setter TargetName="Path" Property="Data" Value="M 0 4 L 4 0 L 8 4 Z" />
+                </DataTrigger>
+                <DataTrigger Binding="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type GridViewColumnHeader}, AncestorLevel=1}, Path=(dv:GridViewSort.SortOrder)}" Value="Descending">
+                    <Setter TargetName="Path" Property="Data" Value="M 0 0 L 4 4 L 8 0 Z" />
+                </DataTrigger>
+            </DataTemplate.Triggers>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type local:Department}">
+            <TextBlock Text="{Binding Title}" />
         </DataTemplate>
     </Window.Resources>
     <i:Interaction.Triggers>
@@ -39,122 +68,55 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition x:Name="Collumn3" Width="*"/>
             </Grid.ColumnDefinitions>
-            <ScrollViewer Grid.Column="0">
-                <ListView Grid.Column="0" x:Name="EmployeesListView" ItemsSource="{Binding SelectedEmployees}" VirtualizingStackPanel.IsVirtualizing="True" 
-                          VirtualizingStackPanel.VirtualizationMode="Recycling" >
-                    <ListView.ItemContainerStyle>
-                        <Style TargetType="ListViewItem">
-                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-                            <Setter Property="VerticalContentAlignment"  Value="Stretch"/>
-                        </Style>
-                    </ListView.ItemContainerStyle>
-                    <ListView.ContextMenu>
-                        <ContextMenu>
-                            <MenuItem Header="Add">
-                                <MenuItem Header="Salary Employee" Command="{Binding AddSalaryEmployeeCommand}"/>
-                                <MenuItem Header="Hourly Employee" Command="{Binding AddHourlyEmployeeCommand}"/>
-                            </MenuItem>
-                            <MenuItem Header="Edit" Command="{Binding EditEmployeeCommand}"
+            <ListView Grid.Column="0" 
+                          x:Name="EmployeesListView" 
+                          ItemsSource="{Binding SelectedEmployees}" 
+                          VirtualizingStackPanel.IsVirtualizing="True" 
+                          VirtualizingStackPanel.VirtualizationMode="Recycling" 
+                          ScrollViewer.IsDeferredScrollingEnabled="True"
+                          dv:GridViewSort.AutoSort="True"
+                          dv:VirtualListLoadingIndicator.IsAttached="True"
+                          Height="440"
+                          Width="Auto">
+                <ListView.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Add">
+                            <MenuItem Header="Salary Employee" Command="{Binding AddSalaryEmployeeCommand}"/>
+                            <MenuItem Header="Hourly Employee" Command="{Binding AddHourlyEmployeeCommand}"/>
+                        </MenuItem>
+                        <MenuItem Header="Edit" Command="{Binding EditEmployeeCommand}"
+                                      CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=ContextMenu},Path=PlacementTarget.SelectedIndex}"/>
+                        <MenuItem Header="Remove" Command="{Binding RemoveEmployeeCommand}"
                                       CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=ContextMenu},Path=PlacementTarget.SelectedItem}"/>
-                            <MenuItem Header="Remove" Command="{Binding RemoveEmployeeCommand}"
-                                      CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=ContextMenu},Path=PlacementTarget.SelectedItem}"/>
-                        </ContextMenu>
-                    </ListView.ContextMenu>
-                    <ListView.View>
-                        <GridView AllowsColumnReorder="true"
-                                    ColumnHeaderToolTip="Employee Information">
-                            <GridViewColumn Header="Second Name">
-                                <GridViewColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
-                                            <TextBlock Text="{Binding SecondName}" Margin="6,3"/>
-                                        </Border>
-                                    </DataTemplate>
-                                </GridViewColumn.CellTemplate>
-                            </GridViewColumn>
-                            <GridViewColumn Header="First Name">
-                                <GridViewColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
-                                            <TextBlock Text="{Binding FirstName}" Margin="6,3"/>
-                                        </Border>
-                                    </DataTemplate>
-                                </GridViewColumn.CellTemplate>
-                            </GridViewColumn>
-                            <GridViewColumn Header="Job Titles">
-                                <GridViewColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
-                                            <TextBlock Text="{Binding JobTitles}" Margin="6,3"/>
-                                        </Border>
-                                    </DataTemplate>
-                                </GridViewColumn.CellTemplate>
-                            </GridViewColumn>
-                            <GridViewColumn Header="Department" >
-                                <GridViewColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
-                                            <TextBlock DataContext="{Binding Path=Department}"
-                                                       Text="{Binding Path=Title}" Margin="6,3"/>
-                                        </Border>
-                                    </DataTemplate>
-                                </GridViewColumn.CellTemplate>
-                            </GridViewColumn>
-                            <GridViewColumn Header="Full or Part-Time">
-                                <GridViewColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
-                                            <TextBlock Text="{Binding JobStatus}" Margin="6,3"/>
-                                        </Border>
-                                    </DataTemplate>
-                                </GridViewColumn.CellTemplate>
-                            </GridViewColumn>
-                            <GridViewColumn Header="Salary or Hourly" >
-                                <GridViewColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
-                                            <TextBlock Text="{Binding PayFrequency}" Margin="6,3"/>
-                                        </Border>
-                                    </DataTemplate>
-                                </GridViewColumn.CellTemplate>
-                            </GridViewColumn>
-                            <GridViewColumn Header="Typical Hours" >
-                                <GridViewColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
-                                            <TextBlock Text="{Binding TypicalHours}" Margin="6,3"/>
-                                        </Border>
-                                    </DataTemplate>
-                                </GridViewColumn.CellTemplate>
-                            </GridViewColumn>
-                            <GridViewColumn Header="Annual Salary" >
-                                <GridViewColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
-                                            <TextBlock Text="{Binding AnnualSalary}" Margin="6,3"/>
-                                        </Border>
-                                    </DataTemplate>
-                                </GridViewColumn.CellTemplate>
-                            </GridViewColumn>
-                            <GridViewColumn Header="Hourly Rate" >
-                                <GridViewColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Border BorderBrush="Gray" BorderThickness=".5" Margin="-6,-3">
-                                            <TextBlock Text="{Binding HourlyRate}" Margin="6,3"/>
-                                        </Border>
-                                    </DataTemplate>
-                                </GridViewColumn.CellTemplate>
-                            </GridViewColumn>
-                        </GridView>
-                    </ListView.View>
-                    <ListView.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <VirtualizingStackPanel>
-                            </VirtualizingStackPanel>
-                        </ItemsPanelTemplate>
-                    </ListView.ItemsPanel>
-                </ListView>
-            </ScrollViewer>
+                    </ContextMenu>
+                </ListView.ContextMenu>
+                <ListView.View>
+                    <GridView AllowsColumnReorder="true"
+                                    ColumnHeaderTemplate="{StaticResource ListViewColumnHeaderTemplate}">
+                        <GridViewColumn Width="Auto" DisplayMemberBinding="{Binding Data.SecondName}" Header="Second Name" dv:GridViewSort.PropertyName="SecondName" />
+                        <GridViewColumn Width="Auto" DisplayMemberBinding="{Binding Data.FirstName}" Header="First Name" dv:GridViewSort.PropertyName="FirstName" />
+                        <GridViewColumn Width="Auto" DisplayMemberBinding="{Binding Data.JobTitles}" Header="Job Titles" dv:GridViewSort.PropertyName="JobTitles" />
+                        <GridViewColumn Width="Auto"  Header="Department" dv:GridViewSort.PropertyName="Department" >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <ContentControl Content="{Binding Data.Department}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Width="Auto" DisplayMemberBinding="{Binding Data.JobStatus}" Header="Full or Part-Time" dv:GridViewSort.PropertyName="JobStatus" />
+                        <GridViewColumn Width="Auto" DisplayMemberBinding="{Binding Data.PayFrequency}" Header="Salary or Hourly" dv:GridViewSort.PropertyName="PayFrequency" />
+                        <GridViewColumn Width="Auto" DisplayMemberBinding="{Binding Data.TypicalHours}" Header="Typical Hours" dv:GridViewSort.PropertyName="TypicalHours" />
+                        <GridViewColumn Width="Auto" DisplayMemberBinding="{Binding Data.AnnualSalary}" Header="Annual Salary" dv:GridViewSort.PropertyName="AnnualSalary" />
+                        <GridViewColumn Width="Auto" DisplayMemberBinding="{Binding Data.HourlyRate}" Header="Hourly Rate" dv:GridViewSort.PropertyName="HourlyRate" />
+                    </GridView>
+                </ListView.View>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <VirtualizingStackPanel>
+                        </VirtualizingStackPanel>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+            </ListView>
             <GridSplitter Grid.Column="1" ShowsPreview="False" Width="3" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
             <ScrollViewer Grid.Column="2">
                 <Expander x:Name="Departments" 

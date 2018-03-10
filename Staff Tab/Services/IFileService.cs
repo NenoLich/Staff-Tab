@@ -12,8 +12,8 @@ namespace Staff_Tab
     /// </summary>
     interface IFileService
     {
-        ObservableCollection<Employee> Open(string filename);
-        void Save(string filename, ObservableCollection<Employee> employees);
+        List<Employee> Open(string filename);
+        void Save(string filename, List<Employee> employees);
 
         Employee GetAfterEdit(string filename);
         void SaveBeforeEdit(string filename, Employee employee);

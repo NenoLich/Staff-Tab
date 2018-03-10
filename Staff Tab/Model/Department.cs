@@ -49,7 +49,9 @@ namespace Staff_Tab
 
         public override bool Equals(object other)
         {
-            return Title == (other as Department).Title;
+            Department department = other as Department;
+
+            return department is null ? false : Title == department.Title;
         }
 
         public override int GetHashCode()
